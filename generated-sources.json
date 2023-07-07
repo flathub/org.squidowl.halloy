@@ -2,20 +2,20 @@
     {
         "type": "git",
         "url": "https://github.com/hecrj/cosmic-text",
-        "commit": "e8b10fd675832cb9c1cc9de30922beb4cf883876",
-        "dest": "flatpak-cargo/git/cosmic-text-e8b10fd"
+        "commit": "c3cd24dc972bb8fd55d016c81ac9fa637e0a4ada",
+        "dest": "flatpak-cargo/git/cosmic-text-c3cd24d"
     },
     {
         "type": "git",
         "url": "https://github.com/hecrj/glyphon",
-        "commit": "8dbf36020e5759fa9144517b321372266160113e",
-        "dest": "flatpak-cargo/git/glyphon-8dbf360"
+        "commit": "8324f20158a62f8520bad4ed09f6aa5552f8f2a6",
+        "dest": "flatpak-cargo/git/glyphon-8324f20"
     },
     {
         "type": "git",
         "url": "https://github.com/tarkah/iced",
-        "commit": "d73dba1f1c2dda7f58c9983e7ee8fbac6f563a65",
-        "dest": "flatpak-cargo/git/iced-d73dba1"
+        "commit": "bcf1ee1bb853bc62fc709d71fa37de1ab6fea6e1",
+        "dest": "flatpak-cargo/git/iced-bcf1ee1"
     },
     {
         "type": "git",
@@ -682,7 +682,7 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/cosmic-text-e8b10fd/.\" \"cargo/vendor/cosmic-text\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/cosmic-text-c3cd24d/.\" \"cargo/vendor/cosmic-text\""
         ]
     },
     {
@@ -1363,12 +1363,12 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/glyphon-8dbf360/.\" \"cargo/vendor/glyphon\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/glyphon-8324f20/.\" \"cargo/vendor/glyphon\""
         ]
     },
     {
         "type": "inline",
-        "contents": "[package]\nname = \"glyphon\"\ndescription = \"Fast, simple 2D text rendering for wgpu\"\nversion = \"0.2.0\"\nedition = \"2021\"\nhomepage = \"https://github.com/grovesNL/glyphon.git\"\nrepository = \"https://github.com/grovesNL/glyphon\"\nlicense = \"MIT OR Apache-2.0 OR Zlib\"\n\n[dependencies]\nwgpu = \"0.16\"\netagere = \"0.2.6\"\nlru = \"0.9\"\n\n[dev-dependencies]\nwinit = \"0.27.0\"\npollster = \"0.2.5\"\n\n[dependencies.cosmic-text]\ngit = \"https://github.com/hecrj/cosmic-text.git\"\nrev = \"e8b10fd675832cb9c1cc9de30922beb4cf883876\"\n",
+        "contents": "[package]\nname = \"glyphon\"\ndescription = \"Fast, simple 2D text rendering for wgpu\"\nversion = \"0.2.0\"\nedition = \"2021\"\nhomepage = \"https://github.com/grovesNL/glyphon.git\"\nrepository = \"https://github.com/grovesNL/glyphon\"\nlicense = \"MIT OR Apache-2.0 OR Zlib\"\n\n[dependencies]\nwgpu = \"0.16\"\netagere = \"0.2.6\"\nlru = \"0.9\"\n\n[dev-dependencies]\nwinit = \"0.27.0\"\npollster = \"0.2.5\"\n\n[dependencies.cosmic-text]\ngit = \"https://github.com/hecrj/cosmic-text.git\"\nrev = \"c3cd24dc972bb8fd55d016c81ac9fa637e0a4ada\"\n",
         "dest": "cargo/vendor/glyphon",
         "dest-filename": "Cargo.toml"
     },
@@ -1589,7 +1589,7 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-d73dba1/.\" \"cargo/vendor/iced\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-bcf1ee1/.\" \"cargo/vendor/iced\""
         ]
     },
     {
@@ -1607,7 +1607,7 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-d73dba1/core\" \"cargo/vendor/iced_core\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-bcf1ee1/core\" \"cargo/vendor/iced_core\""
         ]
     },
     {
@@ -1625,7 +1625,7 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-d73dba1/futures\" \"cargo/vendor/iced_futures\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-bcf1ee1/futures\" \"cargo/vendor/iced_futures\""
         ]
     },
     {
@@ -1643,12 +1643,12 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-d73dba1/graphics\" \"cargo/vendor/iced_graphics\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-bcf1ee1/graphics\" \"cargo/vendor/iced_graphics\""
         ]
     },
     {
         "type": "inline",
-        "contents": "[package]\nname = \"iced_graphics\"\nversion = \"0.8.0\"\nauthors = [ \"H\u00e9ctor Ram\u00f3n Jim\u00e9nez <hector0193@gmail.com>\",]\nedition = \"2021\"\ndescription = \"A bunch of backend-agnostic types that can be leveraged to build a renderer for Iced\"\nlicense = \"MIT\"\nrepository = \"https://github.com/iced-rs/iced\"\ndocumentation = \"https://docs.rs/iced_graphics\"\nkeywords = [ \"gui\", \"ui\", \"graphics\", \"interface\", \"widgets\",]\ncategories = [ \"gui\",]\n\n[features]\ngeometry = [ \"lyon_path\",]\nopengl = []\nimage = [ \"dep:image\", \"kamadak-exif\",]\nweb-colors = []\n\n[dependencies]\nglam = \"0.24\"\nlog = \"0.4\"\nraw-window-handle = \"0.5\"\nthiserror = \"1.0\"\nbitflags = \"1.2\"\n\n[dependencies.bytemuck]\nversion = \"1.4\"\nfeatures = [ \"derive\",]\n\n[dependencies.iced_core]\nversion = \"0.9\"\npath = \"../core\"\n\n[dependencies.tiny-skia]\nversion = \"0.9\"\noptional = true\n\n[dependencies.image]\nversion = \"0.24\"\noptional = true\n\n[dependencies.kamadak-exif]\nversion = \"0.5\"\noptional = true\n\n[dependencies.lyon_path]\nversion = \"1\"\noptional = true\n\n[package.metadata.docs.rs]\nrustdoc-args = [ \"--cfg\", \"docsrs\",]\nall-features = true\n",
+        "contents": "[package]\nname = \"iced_graphics\"\nversion = \"0.8.0\"\nauthors = [ \"H\u00e9ctor Ram\u00f3n Jim\u00e9nez <hector0193@gmail.com>\",]\nedition = \"2021\"\ndescription = \"A bunch of backend-agnostic types that can be leveraged to build a renderer for Iced\"\nlicense = \"MIT\"\nrepository = \"https://github.com/iced-rs/iced\"\ndocumentation = \"https://docs.rs/iced_graphics\"\nkeywords = [ \"gui\", \"ui\", \"graphics\", \"interface\", \"widgets\",]\ncategories = [ \"gui\",]\n\n[features]\ngeometry = [ \"lyon_path\",]\nopengl = []\nimage = [ \"dep:image\", \"kamadak-exif\",]\nweb-colors = []\n\n[dependencies]\nglam = \"0.24\"\nhalf = \"2.2.1\"\nlog = \"0.4\"\nraw-window-handle = \"0.5\"\nthiserror = \"1.0\"\nbitflags = \"1.2\"\n\n[dependencies.bytemuck]\nversion = \"1.4\"\nfeatures = [ \"derive\",]\n\n[dependencies.iced_core]\nversion = \"0.9\"\npath = \"../core\"\n\n[dependencies.image]\nversion = \"0.24\"\noptional = true\n\n[dependencies.kamadak-exif]\nversion = \"0.5\"\noptional = true\n\n[dependencies.lyon_path]\nversion = \"1\"\noptional = true\n\n[package.metadata.docs.rs]\nrustdoc-args = [ \"--cfg\", \"docsrs\",]\nall-features = true\n",
         "dest": "cargo/vendor/iced_graphics",
         "dest-filename": "Cargo.toml"
     },
@@ -1661,12 +1661,12 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-d73dba1/renderer\" \"cargo/vendor/iced_renderer\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-bcf1ee1/renderer\" \"cargo/vendor/iced_renderer\""
         ]
     },
     {
         "type": "inline",
-        "contents": "[package]\nname = \"iced_renderer\"\nversion = \"0.1.0\"\nedition = \"2021\"\n\n[features]\nwgpu = [ \"iced_wgpu\",]\nimage = [ \"iced_tiny_skia/image\", \"iced_wgpu?/image\",]\nsvg = [ \"iced_tiny_skia/svg\", \"iced_wgpu?/svg\",]\ngeometry = [ \"iced_graphics/geometry\", \"iced_tiny_skia/geometry\", \"iced_wgpu?/geometry\",]\ntracing = [ \"iced_wgpu?/tracing\",]\nweb-colors = [ \"iced_wgpu?/web-colors\",]\n\n[dependencies]\nraw-window-handle = \"0.5\"\nthiserror = \"1\"\n\n[dependencies.iced_graphics]\nversion = \"0.8\"\npath = \"../graphics\"\n\n[dependencies.iced_tiny_skia]\nversion = \"0.1\"\npath = \"../tiny_skia\"\n\n[dependencies.iced_wgpu]\nversion = \"0.10\"\npath = \"../wgpu\"\noptional = true\n",
+        "contents": "[package]\nname = \"iced_renderer\"\nversion = \"0.1.0\"\nedition = \"2021\"\n\n[features]\nwgpu = [ \"iced_wgpu\",]\nimage = [ \"iced_tiny_skia/image\", \"iced_wgpu?/image\",]\nsvg = [ \"iced_tiny_skia/svg\", \"iced_wgpu?/svg\",]\ngeometry = [ \"iced_graphics/geometry\", \"iced_tiny_skia/geometry\", \"iced_wgpu?/geometry\",]\ntracing = [ \"iced_wgpu?/tracing\",]\nweb-colors = [ \"iced_wgpu?/web-colors\",]\n\n[dependencies]\nraw-window-handle = \"0.5\"\nthiserror = \"1\"\nlog = \"0.4\"\n\n[dependencies.iced_graphics]\nversion = \"0.8\"\npath = \"../graphics\"\n\n[dependencies.iced_tiny_skia]\nversion = \"0.1\"\npath = \"../tiny_skia\"\n\n[dependencies.iced_wgpu]\nversion = \"0.10\"\npath = \"../wgpu\"\noptional = true\n",
         "dest": "cargo/vendor/iced_renderer",
         "dest-filename": "Cargo.toml"
     },
@@ -1679,7 +1679,7 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-d73dba1/runtime\" \"cargo/vendor/iced_runtime\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-bcf1ee1/runtime\" \"cargo/vendor/iced_runtime\""
         ]
     },
     {
@@ -1697,7 +1697,7 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-d73dba1/style\" \"cargo/vendor/iced_style\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-bcf1ee1/style\" \"cargo/vendor/iced_style\""
         ]
     },
     {
@@ -1715,12 +1715,12 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-d73dba1/tiny_skia\" \"cargo/vendor/iced_tiny_skia\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-bcf1ee1/tiny_skia\" \"cargo/vendor/iced_tiny_skia\""
         ]
     },
     {
         "type": "inline",
-        "contents": "[package]\nname = \"iced_tiny_skia\"\nversion = \"0.1.0\"\nedition = \"2021\"\n\n[features]\nimage = [ \"iced_graphics/image\",]\nsvg = [ \"resvg\",]\ngeometry = [ \"iced_graphics/geometry\",]\n\n[dependencies]\nraw-window-handle = \"0.5\"\nsoftbuffer = \"0.2\"\ntiny-skia = \"0.9\"\nbytemuck = \"1\"\nrustc-hash = \"1.1\"\nkurbo = \"0.9\"\nlog = \"0.4\"\n\n[dependencies.iced_graphics]\nversion = \"0.8\"\npath = \"../graphics\"\nfeatures = [ \"tiny-skia\",]\n\n[dependencies.cosmic-text]\ngit = \"https://github.com/hecrj/cosmic-text.git\"\nrev = \"e8b10fd675832cb9c1cc9de30922beb4cf883876\"\n\n[dependencies.twox-hash]\nversion = \"1.6\"\ndefault-features = false\n\n[dependencies.resvg]\nversion = \"0.32\"\noptional = true\n\n[target.\"cfg(not(target_arch = \\\"wasm32\\\"))\".dependencies.twox-hash]\nversion = \"1.6.1\"\nfeatures = [ \"std\",]\n",
+        "contents": "[package]\nname = \"iced_tiny_skia\"\nversion = \"0.1.0\"\nedition = \"2021\"\n\n[features]\nimage = [ \"iced_graphics/image\",]\nsvg = [ \"resvg\",]\ngeometry = [ \"iced_graphics/geometry\",]\n\n[dependencies]\nraw-window-handle = \"0.5\"\nsoftbuffer = \"0.2\"\ntiny-skia = \"0.9\"\nbytemuck = \"1\"\nrustc-hash = \"1.1\"\nkurbo = \"0.9\"\nlog = \"0.4\"\n\n[dependencies.iced_graphics]\nversion = \"0.8\"\npath = \"../graphics\"\n\n[dependencies.cosmic-text]\ngit = \"https://github.com/hecrj/cosmic-text.git\"\nrev = \"c3cd24dc972bb8fd55d016c81ac9fa637e0a4ada\"\n\n[dependencies.twox-hash]\nversion = \"1.6\"\ndefault-features = false\n\n[dependencies.resvg]\nversion = \"0.32\"\noptional = true\n\n[target.\"cfg(not(target_arch = \\\"wasm32\\\"))\".dependencies.twox-hash]\nversion = \"1.6.1\"\nfeatures = [ \"std\",]\n",
         "dest": "cargo/vendor/iced_tiny_skia",
         "dest-filename": "Cargo.toml"
     },
@@ -1733,12 +1733,12 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-d73dba1/wgpu\" \"cargo/vendor/iced_wgpu\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-bcf1ee1/wgpu\" \"cargo/vendor/iced_wgpu\""
         ]
     },
     {
         "type": "inline",
-        "contents": "[package]\nname = \"iced_wgpu\"\nversion = \"0.10.0\"\nauthors = [ \"H\u00e9ctor Ram\u00f3n Jim\u00e9nez <hector0193@gmail.com>\",]\nedition = \"2021\"\ndescription = \"A wgpu renderer for Iced\"\nlicense = \"MIT AND OFL-1.1\"\nrepository = \"https://github.com/iced-rs/iced\"\n\n[features]\ngeometry = [ \"iced_graphics/geometry\", \"lyon\",]\nimage = [ \"iced_graphics/image\",]\nsvg = [ \"resvg\",]\nweb-colors = [ \"iced_graphics/web-colors\",]\n\n[dependencies]\nwgpu = \"0.16\"\nraw-window-handle = \"0.5\"\nlog = \"0.4\"\nguillotiere = \"0.6\"\nfutures = \"0.3\"\nbitflags = \"1.2\"\nonce_cell = \"1.0\"\nrustc-hash = \"1.1\"\n\n[dependencies.twox-hash]\nversion = \"1.6\"\ndefault-features = false\n\n[dependencies.bytemuck]\nversion = \"1.9\"\nfeatures = [ \"derive\",]\n\n[dependencies.iced_graphics]\nversion = \"0.8\"\npath = \"../graphics\"\n\n[dependencies.glyphon]\nversion = \"0.2\"\ngit = \"https://github.com/hecrj/glyphon.git\"\nrev = \"8dbf36020e5759fa9144517b321372266160113e\"\n\n[dependencies.glam]\nversion = \"0.24\"\n\n[dependencies.lyon]\nversion = \"1.0\"\noptional = true\n\n[dependencies.resvg]\nversion = \"0.32\"\noptional = true\n\n[dependencies.tracing]\nversion = \"0.1.6\"\noptional = true\n\n[package.metadata.docs.rs]\nrustdoc-args = [ \"--cfg\", \"docsrs\",]\nall-features = true\n\n[target.\"cfg(target_arch = \\\"wasm32\\\")\".dependencies.wgpu]\nversion = \"0.16\"\nfeatures = [ \"webgl\",]\n\n[target.\"cfg(not(target_arch = \\\"wasm32\\\"))\".dependencies.twox-hash]\nversion = \"1.6.1\"\nfeatures = [ \"std\",]\n",
+        "contents": "[package]\nname = \"iced_wgpu\"\nversion = \"0.10.0\"\nauthors = [ \"H\u00e9ctor Ram\u00f3n Jim\u00e9nez <hector0193@gmail.com>\",]\nedition = \"2021\"\ndescription = \"A wgpu renderer for Iced\"\nlicense = \"MIT AND OFL-1.1\"\nrepository = \"https://github.com/iced-rs/iced\"\n\n[features]\ngeometry = [ \"iced_graphics/geometry\", \"lyon\",]\nimage = [ \"iced_graphics/image\",]\nsvg = [ \"resvg\",]\nweb-colors = [ \"iced_graphics/web-colors\",]\n\n[dependencies]\nwgpu = \"0.16\"\nraw-window-handle = \"0.5\"\nlog = \"0.4\"\nguillotiere = \"0.6\"\nfutures = \"0.3\"\nbitflags = \"1.2\"\nonce_cell = \"1.0\"\nrustc-hash = \"1.1\"\n\n[dependencies.twox-hash]\nversion = \"1.6\"\ndefault-features = false\n\n[dependencies.bytemuck]\nversion = \"1.9\"\nfeatures = [ \"derive\",]\n\n[dependencies.iced_graphics]\nversion = \"0.8\"\npath = \"../graphics\"\n\n[dependencies.glyphon]\nversion = \"0.2\"\ngit = \"https://github.com/hecrj/glyphon.git\"\nrev = \"8324f20158a62f8520bad4ed09f6aa5552f8f2a6\"\n\n[dependencies.glam]\nversion = \"0.24\"\n\n[dependencies.lyon]\nversion = \"1.0\"\noptional = true\n\n[dependencies.resvg]\nversion = \"0.32\"\noptional = true\n\n[dependencies.tracing]\nversion = \"0.1.6\"\noptional = true\n\n[package.metadata.docs.rs]\nrustdoc-args = [ \"--cfg\", \"docsrs\",]\nall-features = true\n\n[target.\"cfg(target_arch = \\\"wasm32\\\")\".dependencies.wgpu]\nversion = \"0.16\"\nfeatures = [ \"webgl\",]\n\n[target.\"cfg(not(target_arch = \\\"wasm32\\\"))\".dependencies.twox-hash]\nversion = \"1.6.1\"\nfeatures = [ \"std\",]\n",
         "dest": "cargo/vendor/iced_wgpu",
         "dest-filename": "Cargo.toml"
     },
@@ -1751,7 +1751,7 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-d73dba1/widget\" \"cargo/vendor/iced_widget\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-bcf1ee1/widget\" \"cargo/vendor/iced_widget\""
         ]
     },
     {
@@ -1769,7 +1769,7 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-d73dba1/winit\" \"cargo/vendor/iced_winit\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-bcf1ee1/winit\" \"cargo/vendor/iced_winit\""
         ]
     },
     {
@@ -5168,7 +5168,7 @@
     },
     {
         "type": "inline",
-        "contents": "[source.vendored-sources]\ndirectory = \"cargo/vendor\"\n\n[source.crates-io]\nreplace-with = \"vendored-sources\"\n\n[source.\"https://github.com/hecrj/cosmic-text\"]\ngit = \"https://github.com/hecrj/cosmic-text\"\nreplace-with = \"vendored-sources\"\nrev = \"e8b10fd675832cb9c1cc9de30922beb4cf883876\"\n\n[source.\"https://github.com/hecrj/glyphon\"]\ngit = \"https://github.com/hecrj/glyphon\"\nreplace-with = \"vendored-sources\"\nrev = \"8dbf36020e5759fa9144517b321372266160113e\"\n\n[source.\"https://github.com/tarkah/iced\"]\ngit = \"https://github.com/tarkah/iced\"\nreplace-with = \"vendored-sources\"\nrev = \"d73dba1f1c2dda7f58c9983e7ee8fbac6f563a65\"\n\n[source.\"https://github.com/aatxe/irc\"]\ngit = \"https://github.com/aatxe/irc\"\nreplace-with = \"vendored-sources\"\nrev = \"8eef9c56881670aa614782ab4321fb8ae3975fa0\"\n\n[source.\"https://github.com/iced-rs/winit\"]\ngit = \"https://github.com/iced-rs/winit\"\nreplace-with = \"vendored-sources\"\nrev = \"c52db2045d0a2f1b8d9923870de1d4ab1994146e\"\n",
+        "contents": "[source.vendored-sources]\ndirectory = \"cargo/vendor\"\n\n[source.crates-io]\nreplace-with = \"vendored-sources\"\n\n[source.\"https://github.com/hecrj/cosmic-text\"]\ngit = \"https://github.com/hecrj/cosmic-text\"\nreplace-with = \"vendored-sources\"\nrev = \"c3cd24dc972bb8fd55d016c81ac9fa637e0a4ada\"\n\n[source.\"https://github.com/hecrj/glyphon\"]\ngit = \"https://github.com/hecrj/glyphon\"\nreplace-with = \"vendored-sources\"\nrev = \"8324f20158a62f8520bad4ed09f6aa5552f8f2a6\"\n\n[source.\"https://github.com/tarkah/iced\"]\ngit = \"https://github.com/tarkah/iced\"\nreplace-with = \"vendored-sources\"\nrev = \"bcf1ee1bb853bc62fc709d71fa37de1ab6fea6e1\"\n\n[source.\"https://github.com/aatxe/irc\"]\ngit = \"https://github.com/aatxe/irc\"\nreplace-with = \"vendored-sources\"\nrev = \"8eef9c56881670aa614782ab4321fb8ae3975fa0\"\n\n[source.\"https://github.com/iced-rs/winit\"]\ngit = \"https://github.com/iced-rs/winit\"\nreplace-with = \"vendored-sources\"\nrev = \"c52db2045d0a2f1b8d9923870de1d4ab1994146e\"\n",
         "dest": "cargo",
         "dest-filename": "config"
     }
