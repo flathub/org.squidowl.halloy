@@ -1,21 +1,9 @@
 [
     {
         "type": "git",
-        "url": "https://github.com/hecrj/cosmic-text",
-        "commit": "c3cd24dc972bb8fd55d016c81ac9fa637e0a4ada",
-        "dest": "flatpak-cargo/git/cosmic-text-c3cd24d"
-    },
-    {
-        "type": "git",
-        "url": "https://github.com/hecrj/glyphon",
-        "commit": "8324f20158a62f8520bad4ed09f6aa5552f8f2a6",
-        "dest": "flatpak-cargo/git/glyphon-8324f20"
-    },
-    {
-        "type": "git",
         "url": "https://github.com/iced-rs/iced",
-        "commit": "fd077918db7643530c3a7318ed5777d2f3d8761b",
-        "dest": "flatpak-cargo/git/iced-fd07791"
+        "commit": "78dc341ea82449f1e075e37e67c1ccf66b88e8d6",
+        "dest": "flatpak-cargo/git/iced-78dc341"
     },
     {
         "type": "git",
@@ -125,6 +113,19 @@
         "type": "inline",
         "contents": "{\"package\": \"250f629c0161ad8107cf89319e990051fae62832fd343083bea452d93e2205fd\", \"files\": {}}",
         "dest": "cargo/vendor/aliasable-0.1.3",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/allocator-api2/allocator-api2-0.2.16.crate",
+        "sha256": "0942ffc6dcaadf03badf6e6a2d0228460359d5e34b57ccdc720b7382dfbd5ec5",
+        "dest": "cargo/vendor/allocator-api2-0.2.16"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"0942ffc6dcaadf03badf6e6a2d0228460359d5e34b57ccdc720b7382dfbd5ec5\", \"files\": {}}",
+        "dest": "cargo/vendor/allocator-api2-0.2.16",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -674,21 +675,16 @@
         "dest-filename": ".cargo-checksum.json"
     },
     {
-        "type": "shell",
-        "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/cosmic-text-c3cd24d/.\" \"cargo/vendor/cosmic-text\""
-        ]
+        "type": "archive",
+        "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/cosmic-text/cosmic-text-0.9.0.crate",
+        "sha256": "b0b68966c2543609f8d92f9d33ac3b719b2a67529b0c6c0b3e025637b477eef9",
+        "dest": "cargo/vendor/cosmic-text-0.9.0"
     },
     {
         "type": "inline",
-        "contents": "[package]\nname = \"cosmic-text\"\ndescription = \"Pure Rust multi-line text handling\"\nversion = \"0.8.0\"\nauthors = [ \"Jeremy Soller <jeremy@system76.com>\",]\nedition = \"2021\"\nlicense = \"MIT OR Apache-2.0\"\ndocumentation = \"https://docs.rs/cosmic-text/latest/cosmic_text/\"\nrepository = \"https://github.com/pop-os/cosmic-text\"\n\n[dependencies]\nlibm = \"0.2.6\"\nlog = \"0.4.17\"\naliasable = \"0.1.3\"\nunicode-linebreak = \"0.1.4\"\nunicode-script = \"0.5.5\"\nunicode-segmentation = \"1.10.0\"\nrangemap = \"1.2.0\"\n\n[features]\ndefault = [ \"std\", \"swash\",]\nno_std = [ \"rustybuzz/libm\",]\nstd = [ \"fontdb/memmap\", \"fontdb/std\", \"rustybuzz/std\", \"sys-locale\", \"unicode-bidi/std\",]\nvi = [ \"syntect\",]\nwasm-web = [ \"sys-locale?/js\",]\n\n[workspace]\nmembers = [ \"examples/*\",]\n\n[dependencies.fontdb]\nversion = \"0.14.1\"\ndefault-features = false\n\n[dependencies.rustybuzz]\nversion = \"0.8.0\"\ndefault-features = false\nfeatures = [ \"libm\",]\n\n[dependencies.swash]\nversion = \"0.1.6\"\noptional = true\n\n[dependencies.syntect]\nversion = \"5.0.0\"\noptional = true\n\n[dependencies.sys-locale]\nversion = \"0.3.0\"\noptional = true\n\n[dependencies.unicode-bidi]\nversion = \"0.3.8\"\ndefault-features = false\nfeatures = [ \"hardcoded-data\",]\n",
-        "dest": "cargo/vendor/cosmic-text",
-        "dest-filename": "Cargo.toml"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": null, \"files\": {}}",
-        "dest": "cargo/vendor/cosmic-text",
+        "contents": "{\"package\": \"b0b68966c2543609f8d92f9d33ac3b719b2a67529b0c6c0b3e025637b477eef9\", \"files\": {}}",
+        "dest": "cargo/vendor/cosmic-text-0.9.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -915,14 +911,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/etagere/etagere-0.2.7.crate",
-        "sha256": "6301151a318f367f392c31395beb1cfba5ccd9abc44d1db0db3a4b27b9601c89",
-        "dest": "cargo/vendor/etagere-0.2.7"
+        "url": "https://static.crates.io/crates/etagere/etagere-0.2.8.crate",
+        "sha256": "fcf22f748754352918e082e0039335ee92454a5d62bcaf69b5e8daf5907d9644",
+        "dest": "cargo/vendor/etagere-0.2.8"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"6301151a318f367f392c31395beb1cfba5ccd9abc44d1db0db3a4b27b9601c89\", \"files\": {}}",
-        "dest": "cargo/vendor/etagere-0.2.7",
+        "contents": "{\"package\": \"fcf22f748754352918e082e0039335ee92454a5d62bcaf69b5e8daf5907d9644\", \"files\": {}}",
+        "dest": "cargo/vendor/etagere-0.2.8",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -1264,21 +1260,16 @@
         "dest-filename": ".cargo-checksum.json"
     },
     {
-        "type": "shell",
-        "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/glyphon-8324f20/.\" \"cargo/vendor/glyphon\""
-        ]
+        "type": "archive",
+        "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/glyphon/glyphon-0.3.0.crate",
+        "sha256": "5e87caa7459145f5e5f167bf34db4532901404c679e62339fb712a0e3ccf722a",
+        "dest": "cargo/vendor/glyphon-0.3.0"
     },
     {
         "type": "inline",
-        "contents": "[package]\nname = \"glyphon\"\ndescription = \"Fast, simple 2D text rendering for wgpu\"\nversion = \"0.2.0\"\nedition = \"2021\"\nhomepage = \"https://github.com/grovesNL/glyphon.git\"\nrepository = \"https://github.com/grovesNL/glyphon\"\nlicense = \"MIT OR Apache-2.0 OR Zlib\"\n\n[dependencies]\nwgpu = \"0.16\"\netagere = \"0.2.6\"\nlru = \"0.9\"\n\n[dev-dependencies]\nwinit = \"0.27.0\"\npollster = \"0.2.5\"\n\n[dependencies.cosmic-text]\ngit = \"https://github.com/hecrj/cosmic-text.git\"\nrev = \"c3cd24dc972bb8fd55d016c81ac9fa637e0a4ada\"\n",
-        "dest": "cargo/vendor/glyphon",
-        "dest-filename": "Cargo.toml"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": null, \"files\": {}}",
-        "dest": "cargo/vendor/glyphon",
+        "contents": "{\"package\": \"5e87caa7459145f5e5f167bf34db4532901404c679e62339fb712a0e3ccf722a\", \"files\": {}}",
+        "dest": "cargo/vendor/glyphon-0.3.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -1388,14 +1379,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/hashbrown/hashbrown-0.13.2.crate",
-        "sha256": "43a3c133739dddd0d2990f9a4bdf8eb4b21ef50e4851ca85ab661199821d510e",
-        "dest": "cargo/vendor/hashbrown-0.13.2"
+        "url": "https://static.crates.io/crates/hashbrown/hashbrown-0.14.0.crate",
+        "sha256": "2c6201b9ff9fd90a5a3bac2e56a830d0caa509576f0e503818ee82c181b3437a",
+        "dest": "cargo/vendor/hashbrown-0.14.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"43a3c133739dddd0d2990f9a4bdf8eb4b21ef50e4851ca85ab661199821d510e\", \"files\": {}}",
-        "dest": "cargo/vendor/hashbrown-0.13.2",
+        "contents": "{\"package\": \"2c6201b9ff9fd90a5a3bac2e56a830d0caa509576f0e503818ee82c181b3437a\", \"files\": {}}",
+        "dest": "cargo/vendor/hashbrown-0.14.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -1492,7 +1483,7 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-fd07791/.\" \"cargo/vendor/iced\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-78dc341/.\" \"cargo/vendor/iced\""
         ]
     },
     {
@@ -1510,7 +1501,7 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-fd07791/core\" \"cargo/vendor/iced_core\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-78dc341/core\" \"cargo/vendor/iced_core\""
         ]
     },
     {
@@ -1528,7 +1519,7 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-fd07791/futures\" \"cargo/vendor/iced_futures\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-78dc341/futures\" \"cargo/vendor/iced_futures\""
         ]
     },
     {
@@ -1546,7 +1537,7 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-fd07791/graphics\" \"cargo/vendor/iced_graphics\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-78dc341/graphics\" \"cargo/vendor/iced_graphics\""
         ]
     },
     {
@@ -1564,7 +1555,7 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-fd07791/renderer\" \"cargo/vendor/iced_renderer\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-78dc341/renderer\" \"cargo/vendor/iced_renderer\""
         ]
     },
     {
@@ -1582,7 +1573,7 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-fd07791/runtime\" \"cargo/vendor/iced_runtime\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-78dc341/runtime\" \"cargo/vendor/iced_runtime\""
         ]
     },
     {
@@ -1600,7 +1591,7 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-fd07791/style\" \"cargo/vendor/iced_style\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-78dc341/style\" \"cargo/vendor/iced_style\""
         ]
     },
     {
@@ -1618,12 +1609,12 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-fd07791/tiny_skia\" \"cargo/vendor/iced_tiny_skia\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-78dc341/tiny_skia\" \"cargo/vendor/iced_tiny_skia\""
         ]
     },
     {
         "type": "inline",
-        "contents": "[package]\nname = \"iced_tiny_skia\"\nversion = \"0.1.0\"\nedition = \"2021\"\n\n[features]\nimage = [ \"iced_graphics/image\",]\nsvg = [ \"resvg\",]\ngeometry = [ \"iced_graphics/geometry\",]\n\n[dependencies]\nraw-window-handle = \"0.5\"\nsoftbuffer = \"0.2\"\ntiny-skia = \"0.10\"\nbytemuck = \"1\"\nrustc-hash = \"1.1\"\nkurbo = \"0.9\"\nlog = \"0.4\"\n\n[dependencies.iced_graphics]\nversion = \"0.8\"\npath = \"../graphics\"\n\n[dependencies.cosmic-text]\ngit = \"https://github.com/hecrj/cosmic-text.git\"\nrev = \"c3cd24dc972bb8fd55d016c81ac9fa637e0a4ada\"\n\n[dependencies.twox-hash]\nversion = \"1.6\"\ndefault-features = false\n\n[dependencies.resvg]\nversion = \"0.35\"\noptional = true\n\n[target.\"cfg(not(target_arch = \\\"wasm32\\\"))\".dependencies.twox-hash]\nversion = \"1.6.1\"\nfeatures = [ \"std\",]\n",
+        "contents": "[package]\nname = \"iced_tiny_skia\"\nversion = \"0.1.0\"\nedition = \"2021\"\n\n[features]\nimage = [ \"iced_graphics/image\",]\nsvg = [ \"resvg\",]\ngeometry = [ \"iced_graphics/geometry\",]\n\n[dependencies]\nraw-window-handle = \"0.5\"\nsoftbuffer = \"0.2\"\ntiny-skia = \"0.10\"\ncosmic-text = \"0.9\"\nbytemuck = \"1\"\nrustc-hash = \"1.1\"\nkurbo = \"0.9\"\nlog = \"0.4\"\n\n[dependencies.iced_graphics]\nversion = \"0.8\"\npath = \"../graphics\"\n\n[dependencies.twox-hash]\nversion = \"1.6\"\ndefault-features = false\n\n[dependencies.resvg]\nversion = \"0.35\"\noptional = true\n\n[target.\"cfg(not(target_arch = \\\"wasm32\\\"))\".dependencies.twox-hash]\nversion = \"1.6.1\"\nfeatures = [ \"std\",]\n",
         "dest": "cargo/vendor/iced_tiny_skia",
         "dest-filename": "Cargo.toml"
     },
@@ -1636,12 +1627,12 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-fd07791/wgpu\" \"cargo/vendor/iced_wgpu\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-78dc341/wgpu\" \"cargo/vendor/iced_wgpu\""
         ]
     },
     {
         "type": "inline",
-        "contents": "[package]\nname = \"iced_wgpu\"\nversion = \"0.10.0\"\nauthors = [ \"H\u00e9ctor Ram\u00f3n Jim\u00e9nez <hector0193@gmail.com>\",]\nedition = \"2021\"\ndescription = \"A wgpu renderer for Iced\"\nlicense = \"MIT AND OFL-1.1\"\nrepository = \"https://github.com/iced-rs/iced\"\n\n[features]\ngeometry = [ \"iced_graphics/geometry\", \"lyon\",]\nimage = [ \"iced_graphics/image\",]\nsvg = [ \"resvg\",]\nweb-colors = [ \"iced_graphics/web-colors\",]\n\n[dependencies]\nwgpu = \"0.16\"\nraw-window-handle = \"0.5\"\nlog = \"0.4\"\nguillotiere = \"0.6\"\nfutures = \"0.3\"\nbitflags = \"1.2\"\nonce_cell = \"1.0\"\nrustc-hash = \"1.1\"\n\n[dependencies.twox-hash]\nversion = \"1.6\"\ndefault-features = false\n\n[dependencies.bytemuck]\nversion = \"1.9\"\nfeatures = [ \"derive\",]\n\n[dependencies.iced_graphics]\nversion = \"0.8\"\npath = \"../graphics\"\n\n[dependencies.glyphon]\nversion = \"0.2\"\ngit = \"https://github.com/hecrj/glyphon.git\"\nrev = \"8324f20158a62f8520bad4ed09f6aa5552f8f2a6\"\n\n[dependencies.glam]\nversion = \"0.24\"\n\n[dependencies.lyon]\nversion = \"1.0\"\noptional = true\n\n[dependencies.resvg]\nversion = \"0.35\"\noptional = true\n\n[dependencies.tracing]\nversion = \"0.1.6\"\noptional = true\n\n[package.metadata.docs.rs]\nrustdoc-args = [ \"--cfg\", \"docsrs\",]\nall-features = true\n\n[target.\"cfg(target_arch = \\\"wasm32\\\")\".dependencies.wgpu]\nversion = \"0.16\"\nfeatures = [ \"webgl\",]\n\n[target.\"cfg(not(target_arch = \\\"wasm32\\\"))\".dependencies.twox-hash]\nversion = \"1.6.1\"\nfeatures = [ \"std\",]\n",
+        "contents": "[package]\nname = \"iced_wgpu\"\nversion = \"0.10.0\"\nauthors = [ \"H\u00e9ctor Ram\u00f3n Jim\u00e9nez <hector0193@gmail.com>\",]\nedition = \"2021\"\ndescription = \"A wgpu renderer for Iced\"\nlicense = \"MIT AND OFL-1.1\"\nrepository = \"https://github.com/iced-rs/iced\"\n\n[features]\ngeometry = [ \"iced_graphics/geometry\", \"lyon\",]\nimage = [ \"iced_graphics/image\",]\nsvg = [ \"resvg\",]\nweb-colors = [ \"iced_graphics/web-colors\",]\n\n[dependencies]\nwgpu = \"0.16\"\nglyphon = \"0.3\"\nraw-window-handle = \"0.5\"\nguillotiere = \"0.6\"\nfutures = \"0.3\"\nbitflags = \"1.2\"\nonce_cell = \"1.0\"\nrustc-hash = \"1.1\"\nlog = \"0.4\"\n\n[dependencies.twox-hash]\nversion = \"1.6\"\ndefault-features = false\n\n[dependencies.bytemuck]\nversion = \"1.9\"\nfeatures = [ \"derive\",]\n\n[dependencies.iced_graphics]\nversion = \"0.8\"\npath = \"../graphics\"\n\n[dependencies.glam]\nversion = \"0.24\"\n\n[dependencies.lyon]\nversion = \"1.0\"\noptional = true\n\n[dependencies.resvg]\nversion = \"0.35\"\noptional = true\n\n[dependencies.tracing]\nversion = \"0.1.6\"\noptional = true\n\n[package.metadata.docs.rs]\nrustdoc-args = [ \"--cfg\", \"docsrs\",]\nall-features = true\n\n[target.\"cfg(target_arch = \\\"wasm32\\\")\".dependencies.wgpu]\nversion = \"0.16\"\nfeatures = [ \"webgl\",]\n\n[target.\"cfg(not(target_arch = \\\"wasm32\\\"))\".dependencies.twox-hash]\nversion = \"1.6.1\"\nfeatures = [ \"std\",]\n",
         "dest": "cargo/vendor/iced_wgpu",
         "dest-filename": "Cargo.toml"
     },
@@ -1654,7 +1645,7 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-fd07791/widget\" \"cargo/vendor/iced_widget\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-78dc341/widget\" \"cargo/vendor/iced_widget\""
         ]
     },
     {
@@ -1672,7 +1663,7 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-fd07791/winit\" \"cargo/vendor/iced_winit\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-78dc341/winit\" \"cargo/vendor/iced_winit\""
         ]
     },
     {
@@ -2015,14 +2006,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/lru/lru-0.9.0.crate",
-        "sha256": "71e7d46de488603ffdd5f30afbc64fbba2378214a2c3a2fb83abf3d33126df17",
-        "dest": "cargo/vendor/lru-0.9.0"
+        "url": "https://static.crates.io/crates/lru/lru-0.11.0.crate",
+        "sha256": "eedb2bdbad7e0634f83989bf596f497b070130daaa398ab22d84c39e266deec5",
+        "dest": "cargo/vendor/lru-0.11.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"71e7d46de488603ffdd5f30afbc64fbba2378214a2c3a2fb83abf3d33126df17\", \"files\": {}}",
-        "dest": "cargo/vendor/lru-0.9.0",
+        "contents": "{\"package\": \"eedb2bdbad7e0634f83989bf596f497b070130daaa398ab22d84c39e266deec5\", \"files\": {}}",
+        "dest": "cargo/vendor/lru-0.11.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -5074,7 +5065,7 @@
     },
     {
         "type": "inline",
-        "contents": "[source.vendored-sources]\ndirectory = \"cargo/vendor\"\n\n[source.crates-io]\nreplace-with = \"vendored-sources\"\n\n[source.\"https://github.com/hecrj/cosmic-text\"]\ngit = \"https://github.com/hecrj/cosmic-text\"\nreplace-with = \"vendored-sources\"\nrev = \"c3cd24dc972bb8fd55d016c81ac9fa637e0a4ada\"\n\n[source.\"https://github.com/hecrj/glyphon\"]\ngit = \"https://github.com/hecrj/glyphon\"\nreplace-with = \"vendored-sources\"\nrev = \"8324f20158a62f8520bad4ed09f6aa5552f8f2a6\"\n\n[source.\"https://github.com/iced-rs/iced\"]\ngit = \"https://github.com/iced-rs/iced\"\nreplace-with = \"vendored-sources\"\nrev = \"fd077918db7643530c3a7318ed5777d2f3d8761b\"\n\n[source.\"https://github.com/iced-rs/winit\"]\ngit = \"https://github.com/iced-rs/winit\"\nreplace-with = \"vendored-sources\"\nrev = \"c52db2045d0a2f1b8d9923870de1d4ab1994146e\"\n",
+        "contents": "[source.vendored-sources]\ndirectory = \"cargo/vendor\"\n\n[source.crates-io]\nreplace-with = \"vendored-sources\"\n\n[source.\"https://github.com/iced-rs/iced\"]\ngit = \"https://github.com/iced-rs/iced\"\nreplace-with = \"vendored-sources\"\nrev = \"78dc341ea82449f1e075e37e67c1ccf66b88e8d6\"\n\n[source.\"https://github.com/iced-rs/winit\"]\ngit = \"https://github.com/iced-rs/winit\"\nreplace-with = \"vendored-sources\"\nrev = \"c52db2045d0a2f1b8d9923870de1d4ab1994146e\"\n",
         "dest": "cargo",
         "dest-filename": "config"
     }

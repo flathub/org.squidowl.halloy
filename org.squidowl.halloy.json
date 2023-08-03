@@ -29,17 +29,17 @@
             "build-commands": [
                 "cargo --offline fetch --manifest-path Cargo.toml --verbose",
                 "cargo --offline build --release --verbose",
-                "install -Dm644 ./assets/logo_128px.png /app/share/icons/hicolor/128x128/apps/org.squidowl.halloy.png",
-                "install -Dm644 ./assets/halloy.appdata.xml /app/share/metainfo/org.squidowl.halloy.appdata.xml",
-                "install -Dm644 ./assets/halloy.desktop /app/share/applications/org.squidowl.halloy.desktop",
+                "install -Dm644 ./assets/linux/org.squidowl.halloy.png /app/share/icons/hicolor/128x128/apps/org.squidowl.halloy.png",
+                "install -Dm644 ./assets/linux/org.squidowl.halloy.appdata.xml /app/share/metainfo/org.squidowl.halloy.appdata.xml",
+                "install -Dm644 ./assets/linux/org.squidowl.halloy.desktop /app/share/applications/org.squidowl.halloy.desktop",
                 "install -Dm755 ./target/release/halloy -t /app/bin/"
               ],
             "sources": [
                 {
                     "type": "archive",
                     "archive-type": "tar-gzip",
-                    "url": "https://github.com/squidowl/halloy/archive/refs/tags/2023.3.tar.gz",
-                    "sha256": "1158104d70c3d4be01c591493a2629c3f03a3071239f14e790455c4ade03c02e"
+                    "url": "https://github.com/squidowl/halloy/archive/refs/tags/2023.4.tar.gz",
+                    "sha256": "a3440c82b1ec0300f206109d15c53cf23584760f3f7d547e047cf0fe592296f3"
                 },
                 "generated-sources.json"
             ]
