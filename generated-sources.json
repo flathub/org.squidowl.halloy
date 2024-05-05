@@ -8,8 +8,8 @@
     {
         "type": "git",
         "url": "https://github.com/iced-rs/iced",
-        "commit": "31d1d5fecbef50fa319cabd5d4194f1e4aaefa21",
-        "dest": "flatpak-cargo/git/iced-31d1d5f"
+        "commit": "a05b8044a9a82c1802d4d97f1723e24b9d9dad9c",
+        "dest": "flatpak-cargo/git/iced-a05b804"
     },
     {
         "type": "git",
@@ -189,6 +189,19 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/anyhow/anyhow-1.0.82.crate",
+        "sha256": "f538837af36e6f6a9be0faa67f9a314f8119e4e4b5867c6ab40ed60360142519",
+        "dest": "cargo/vendor/anyhow-1.0.82"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"f538837af36e6f6a9be0faa67f9a314f8119e4e4b5867c6ab40ed60360142519\", \"files\": {}}",
+        "dest": "cargo/vendor/anyhow-1.0.82",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/approx/approx-0.5.1.crate",
         "sha256": "cab112f0a86d568ea0e627cc1d6be74a1e9cd55214684db5561995f6dad897c6",
         "dest": "cargo/vendor/approx-0.5.1"
@@ -340,6 +353,19 @@
         "type": "inline",
         "contents": "{\"package\": \"bc19683171f287921f2405677dd2ed2549c3b3bda697a563ebc3a121ace2aba1\", \"files\": {}}",
         "dest": "cargo/vendor/async-fs-2.1.1",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/async-http-proxy/async-http-proxy-1.2.5.crate",
+        "sha256": "29faa5d4d308266048bd7505ba55484315a890102f9345b9ff4b87de64201592",
+        "dest": "cargo/vendor/async-http-proxy-1.2.5"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"29faa5d4d308266048bd7505ba55484315a890102f9345b9ff4b87de64201592\", \"files\": {}}",
+        "dest": "cargo/vendor/async-http-proxy-1.2.5",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -509,6 +535,19 @@
         "type": "inline",
         "contents": "{\"package\": \"26b05800d2e817c8b3b4b54abd461726265fa9789ae34330622f2db9ee696f9d\", \"files\": {}}",
         "dest": "cargo/vendor/backtrace-0.3.71",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/base64/base64-0.13.1.crate",
+        "sha256": "9e1b586273c5702936fe7b7d6896644d8be71e6314cfe09d3167c95f712589e8",
+        "dest": "cargo/vendor/base64-0.13.1"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"9e1b586273c5702936fe7b7d6896644d8be71e6314cfe09d3167c95f712589e8\", \"files\": {}}",
+        "dest": "cargo/vendor/base64-0.13.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -1671,6 +1710,19 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/fast-socks5/fast-socks5-0.9.6.crate",
+        "sha256": "f89f36d4ee12370d30d57b16c7e190950a1a916e7dbbb5fd5a412f5ef913fe84",
+        "dest": "cargo/vendor/fast-socks5-0.9.6"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"f89f36d4ee12370d30d57b16c7e190950a1a916e7dbbb5fd5a412f5ef913fe84\", \"files\": {}}",
+        "dest": "cargo/vendor/fast-socks5-0.9.6",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/fast-srgb8/fast-srgb8-1.0.0.crate",
         "sha256": "dd2e7510819d6fbf51a5545c8f922716ecfb14df168a3242f7d33e0239efe6a1",
         "dest": "cargo/vendor/fast-srgb8-1.0.0"
@@ -2482,12 +2534,12 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-31d1d5f/.\" \"cargo/vendor/iced\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-a05b804/.\" \"cargo/vendor/iced\""
         ]
     },
     {
         "type": "inline",
-        "contents": "[package]\nname = \"iced\"\ndescription = \"A cross-platform GUI library inspired by Elm\"\n\n[features]\ndefault = [ \"wgpu\", \"tiny-skia\", \"fira-sans\", \"auto-detect-theme\",]\nwgpu = [ \"iced_renderer/wgpu\", \"iced_widget/wgpu\",]\ntiny-skia = [ \"iced_renderer/tiny-skia\",]\nimage = [ \"iced_widget/image\", \"dep:image\",]\nsvg = [ \"iced_widget/svg\",]\ncanvas = [ \"iced_widget/canvas\",]\nqr_code = [ \"iced_widget/qr_code\",]\nlazy = [ \"iced_widget/lazy\",]\ndebug = [ \"iced_winit/debug\",]\ntokio = [ \"iced_futures/tokio\",]\nasync-std = [ \"iced_futures/async-std\",]\nsmol = [ \"iced_futures/smol\",]\nsystem = [ \"iced_winit/system\",]\nweb-colors = [ \"iced_renderer/web-colors\",]\nwebgl = [ \"iced_renderer/webgl\",]\nhighlighter = [ \"iced_highlighter\",]\nmulti-window = [ \"iced_winit/multi-window\",]\nadvanced = [ \"iced_core/advanced\", \"iced_widget/advanced\",]\nfira-sans = [ \"iced_renderer/fira-sans\",]\nauto-detect-theme = [ \"iced_core/auto-detect-theme\",]\n\n[workspace]\nmembers = [ \"core\", \"futures\", \"graphics\", \"highlighter\", \"renderer\", \"runtime\", \"tiny_skia\", \"wgpu\", \"widget\", \"winit\", \"examples/*\",]\n\n[package.version]\nworkspace = true\n\n[package.edition]\nworkspace = true\n\n[package.authors]\nworkspace = true\n\n[package.license]\nworkspace = true\n\n[package.repository]\nworkspace = true\n\n[package.homepage]\nworkspace = true\n\n[package.categories]\nworkspace = true\n\n[package.keywords]\nworkspace = true\n\n[badges.maintenance]\nstatus = \"actively-developed\"\n\n[dependencies.iced_core]\nworkspace = true\n\n[dependencies.iced_futures]\nworkspace = true\n\n[dependencies.iced_renderer]\nworkspace = true\n\n[dependencies.iced_widget]\nworkspace = true\n\n[dependencies.iced_winit]\nfeatures = [ \"application\",]\nworkspace = true\n\n[dependencies.iced_highlighter]\nworkspace = true\noptional = true\n\n[dependencies.thiserror]\nworkspace = true\n\n[dependencies.image]\nworkspace = true\noptional = true\n\n[profile.release-opt]\ninherits = \"release\"\ncodegen-units = 1\ndebug = false\nlto = true\nincremental = false\nopt-level = 3\noverflow-checks = false\nstrip = \"debuginfo\"\n\n[workspace.package]\nversion = \"0.13.0-dev\"\nauthors = [ \"H\u00e9ctor Ram\u00f3n Jim\u00e9nez <hector@hecrj.dev>\",]\nedition = \"2021\"\nlicense = \"MIT\"\nrepository = \"https://github.com/iced-rs/iced\"\nhomepage = \"https://iced.rs\"\ncategories = [ \"gui\",]\nkeywords = [ \"gui\", \"ui\", \"graphics\", \"interface\", \"widgets\",]\n\n[workspace.dependencies]\nasync-std = \"1.0\"\nbitflags = \"2.0\"\ncosmic-text = \"0.10\"\ndark-light = \"1.0\"\nfutures = \"0.3\"\nglam = \"0.25\"\nguillotiere = \"0.6\"\nhalf = \"2.2\"\nimage = \"0.24\"\nkamadak-exif = \"0.5\"\nkurbo = \"0.10\"\nlog = \"0.4\"\nlyon = \"1.0\"\nlyon_path = \"1.0\"\nnum-traits = \"0.2\"\nonce_cell = \"1.0\"\nouroboros = \"0.18\"\npalette = \"0.7\"\nraw-window-handle = \"0.6\"\nresvg = \"0.36\"\nrustc-hash = \"1.0\"\nsmol = \"1.0\"\nsmol_str = \"0.2\"\nsoftbuffer = \"0.4\"\nsyntect = \"5.1\"\nsysinfo = \"0.30\"\nthiserror = \"1.0\"\ntiny-skia = \"0.11\"\ntokio = \"1.0\"\ntracing = \"0.1\"\nunicode-segmentation = \"1.0\"\nwasm-bindgen-futures = \"0.4\"\nwasm-timer = \"0.2\"\nweb-sys = \"=0.3.67\"\nweb-time = \"0.2\"\nwgpu = \"0.19\"\nwinapi = \"0.3\"\nwindow_clipboard = \"0.4.1\"\n\n[workspace.dependencies.iced]\nversion = \"0.13.0-dev\"\npath = \".\"\n\n[workspace.dependencies.iced_core]\nversion = \"0.13.0-dev\"\npath = \"core\"\n\n[workspace.dependencies.iced_futures]\nversion = \"0.13.0-dev\"\npath = \"futures\"\n\n[workspace.dependencies.iced_graphics]\nversion = \"0.13.0-dev\"\npath = \"graphics\"\n\n[workspace.dependencies.iced_highlighter]\nversion = \"0.13.0-dev\"\npath = \"highlighter\"\n\n[workspace.dependencies.iced_renderer]\nversion = \"0.13.0-dev\"\npath = \"renderer\"\n\n[workspace.dependencies.iced_runtime]\nversion = \"0.13.0-dev\"\npath = \"runtime\"\n\n[workspace.dependencies.iced_tiny_skia]\nversion = \"0.13.0-dev\"\npath = \"tiny_skia\"\n\n[workspace.dependencies.iced_wgpu]\nversion = \"0.13.0-dev\"\npath = \"wgpu\"\n\n[workspace.dependencies.iced_widget]\nversion = \"0.13.0-dev\"\npath = \"widget\"\n\n[workspace.dependencies.iced_winit]\nversion = \"0.13.0-dev\"\npath = \"winit\"\n\n[workspace.dependencies.bytemuck]\nversion = \"1.0\"\nfeatures = [ \"derive\",]\n\n[workspace.dependencies.glyphon]\ngit = \"https://github.com/hecrj/glyphon.git\"\nrev = \"ceed55403ce53e120ce9d1fae17dcfe388726118\"\n\n[workspace.dependencies.qrcode]\nversion = \"0.13\"\ndefault-features = false\n\n[workspace.dependencies.winit]\ngit = \"https://github.com/iced-rs/winit.git\"\nrev = \"592bd152f6d5786fae7d918532d7db752c0d164f\"\n\n[package.metadata.docs.rs]\nrustdoc-args = [ \"--cfg\", \"docsrs\",]\nall-features = true\n",
+        "contents": "[[bench]]\nname = \"wgpu\"\nharness = false\nrequired-features = [ \"canvas\",]\n\n[package]\nname = \"iced\"\ndescription = \"A cross-platform GUI library inspired by Elm\"\nversion = \"0.13.0-dev\"\nedition = \"2021\"\nauthors = [ \"H\u00e9ctor Ram\u00f3n Jim\u00e9nez <hector@hecrj.dev>\",]\nlicense = \"MIT\"\nrepository = \"https://github.com/iced-rs/iced\"\nhomepage = \"https://iced.rs\"\ncategories = [ \"gui\",]\nkeywords = [ \"gui\", \"ui\", \"graphics\", \"interface\", \"widgets\",]\n\n[features]\ndefault = [ \"wgpu\", \"tiny-skia\", \"fira-sans\", \"auto-detect-theme\",]\nwgpu = [ \"iced_renderer/wgpu\", \"iced_widget/wgpu\",]\ntiny-skia = [ \"iced_renderer/tiny-skia\",]\nimage = [ \"iced_widget/image\", \"dep:image\",]\nsvg = [ \"iced_widget/svg\",]\ncanvas = [ \"iced_widget/canvas\",]\nqr_code = [ \"iced_widget/qr_code\",]\nlazy = [ \"iced_widget/lazy\",]\ndebug = [ \"iced_winit/debug\",]\ntokio = [ \"iced_futures/tokio\",]\nasync-std = [ \"iced_futures/async-std\",]\nsmol = [ \"iced_futures/smol\",]\nsystem = [ \"iced_winit/system\",]\nweb-colors = [ \"iced_renderer/web-colors\",]\nwebgl = [ \"iced_renderer/webgl\",]\nhighlighter = [ \"iced_highlighter\",]\nmulti-window = [ \"iced_winit/multi-window\",]\nadvanced = [ \"iced_core/advanced\", \"iced_widget/advanced\",]\nfira-sans = [ \"iced_renderer/fira-sans\",]\nauto-detect-theme = [ \"iced_core/auto-detect-theme\",]\n\n[dependencies]\nthiserror = \"1.0\"\n\n[dev-dependencies]\ncriterion = \"0.5\"\n\n[workspace]\nmembers = [ \"core\", \"futures\", \"graphics\", \"highlighter\", \"renderer\", \"runtime\", \"tiny_skia\", \"wgpu\", \"widget\", \"winit\", \"examples/*\",]\n\n[lints.rust]\nrust_2018_idioms = \"forbid\"\nmissing_debug_implementations = \"deny\"\nmissing_docs = \"deny\"\nunsafe_code = \"deny\"\nunused_results = \"deny\"\n\n[lints.clippy]\ntype-complexity = \"allow\"\nsemicolon_if_nothing_returned = \"deny\"\ntrivially-copy-pass-by-ref = \"deny\"\ndefault_trait_access = \"deny\"\nmatch-wildcard-for-single-variants = \"deny\"\nredundant-closure-for-method-calls = \"deny\"\nfilter_map_next = \"deny\"\nmanual_let_else = \"deny\"\nunused_async = \"deny\"\nfrom_over_into = \"deny\"\nneedless_borrow = \"deny\"\nnew_without_default = \"deny\"\nuseless_conversion = \"deny\"\n\n[lints.rustdoc]\nbroken_intra_doc_links = \"forbid\"\n\n[badges.maintenance]\nstatus = \"actively-developed\"\n\n[dependencies.iced_core]\nversion = \"0.13.0-dev\"\npath = \"core\"\n\n[dependencies.iced_futures]\nversion = \"0.13.0-dev\"\npath = \"futures\"\n\n[dependencies.iced_renderer]\nversion = \"0.13.0-dev\"\npath = \"renderer\"\n\n[dependencies.iced_widget]\nversion = \"0.13.0-dev\"\npath = \"widget\"\n\n[dependencies.iced_winit]\nfeatures = [ \"application\",]\nversion = \"0.13.0-dev\"\npath = \"winit\"\n\n[dependencies.iced_highlighter]\noptional = true\nversion = \"0.13.0-dev\"\npath = \"highlighter\"\n\n[dependencies.image]\noptional = true\nversion = \"0.24\"\n\n[dev-dependencies.iced_wgpu]\nversion = \"0.13.0-dev\"\npath = \"wgpu\"\n\n[profile.release-opt]\ninherits = \"release\"\ncodegen-units = 1\ndebug = false\nlto = true\nincremental = false\nopt-level = 3\noverflow-checks = false\nstrip = \"debuginfo\"\n\n[workspace.package]\nversion = \"0.13.0-dev\"\nauthors = [ \"H\u00e9ctor Ram\u00f3n Jim\u00e9nez <hector@hecrj.dev>\",]\nedition = \"2021\"\nlicense = \"MIT\"\nrepository = \"https://github.com/iced-rs/iced\"\nhomepage = \"https://iced.rs\"\ncategories = [ \"gui\",]\nkeywords = [ \"gui\", \"ui\", \"graphics\", \"interface\", \"widgets\",]\n\n[workspace.dependencies]\nasync-std = \"1.0\"\nbitflags = \"2.0\"\ncosmic-text = \"0.10\"\ndark-light = \"1.0\"\nfutures = \"0.3\"\nglam = \"0.25\"\nguillotiere = \"0.6\"\nhalf = \"2.2\"\nimage = \"0.24\"\nkamadak-exif = \"0.5\"\nkurbo = \"0.10\"\nlog = \"0.4\"\nlyon = \"1.0\"\nlyon_path = \"1.0\"\nnum-traits = \"0.2\"\nonce_cell = \"1.0\"\nouroboros = \"0.18\"\npalette = \"0.7\"\nraw-window-handle = \"0.6\"\nresvg = \"0.36\"\nrustc-hash = \"1.0\"\nsmol = \"1.0\"\nsmol_str = \"0.2\"\nsoftbuffer = \"0.4\"\nsyntect = \"5.1\"\nsysinfo = \"0.30\"\nthiserror = \"1.0\"\ntiny-skia = \"0.11\"\ntokio = \"1.0\"\ntracing = \"0.1\"\nunicode-segmentation = \"1.0\"\nwasm-bindgen-futures = \"0.4\"\nwasm-timer = \"0.2\"\nweb-sys = \"=0.3.67\"\nweb-time = \"0.2\"\nwgpu = \"0.19\"\nwinapi = \"0.3\"\nwindow_clipboard = \"0.4.1\"\n\n[workspace.dependencies.iced]\nversion = \"0.13.0-dev\"\npath = \".\"\n\n[workspace.dependencies.iced_core]\nversion = \"0.13.0-dev\"\npath = \"core\"\n\n[workspace.dependencies.iced_futures]\nversion = \"0.13.0-dev\"\npath = \"futures\"\n\n[workspace.dependencies.iced_graphics]\nversion = \"0.13.0-dev\"\npath = \"graphics\"\n\n[workspace.dependencies.iced_highlighter]\nversion = \"0.13.0-dev\"\npath = \"highlighter\"\n\n[workspace.dependencies.iced_renderer]\nversion = \"0.13.0-dev\"\npath = \"renderer\"\n\n[workspace.dependencies.iced_runtime]\nversion = \"0.13.0-dev\"\npath = \"runtime\"\n\n[workspace.dependencies.iced_tiny_skia]\nversion = \"0.13.0-dev\"\npath = \"tiny_skia\"\n\n[workspace.dependencies.iced_wgpu]\nversion = \"0.13.0-dev\"\npath = \"wgpu\"\n\n[workspace.dependencies.iced_widget]\nversion = \"0.13.0-dev\"\npath = \"widget\"\n\n[workspace.dependencies.iced_winit]\nversion = \"0.13.0-dev\"\npath = \"winit\"\n\n[workspace.dependencies.bytemuck]\nversion = \"1.0\"\nfeatures = [ \"derive\",]\n\n[workspace.dependencies.glyphon]\ngit = \"https://github.com/hecrj/glyphon.git\"\nrev = \"ceed55403ce53e120ce9d1fae17dcfe388726118\"\n\n[workspace.dependencies.qrcode]\nversion = \"0.13\"\ndefault-features = false\n\n[workspace.dependencies.winit]\ngit = \"https://github.com/iced-rs/winit.git\"\nrev = \"592bd152f6d5786fae7d918532d7db752c0d164f\"\n\n[workspace.lints.rust]\nrust_2018_idioms = \"forbid\"\nmissing_debug_implementations = \"deny\"\nmissing_docs = \"deny\"\nunsafe_code = \"deny\"\nunused_results = \"deny\"\n\n[workspace.lints.clippy]\ntype-complexity = \"allow\"\nsemicolon_if_nothing_returned = \"deny\"\ntrivially-copy-pass-by-ref = \"deny\"\ndefault_trait_access = \"deny\"\nmatch-wildcard-for-single-variants = \"deny\"\nredundant-closure-for-method-calls = \"deny\"\nfilter_map_next = \"deny\"\nmanual_let_else = \"deny\"\nunused_async = \"deny\"\nfrom_over_into = \"deny\"\nneedless_borrow = \"deny\"\nnew_without_default = \"deny\"\nuseless_conversion = \"deny\"\n\n[workspace.lints.rustdoc]\nbroken_intra_doc_links = \"forbid\"\n\n[package.metadata.docs.rs]\nrustdoc-args = [ \"--cfg\", \"docsrs\",]\nall-features = true\n",
         "dest": "cargo/vendor/iced",
         "dest-filename": "Cargo.toml"
     },
@@ -2500,12 +2552,12 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-31d1d5f/core\" \"cargo/vendor/iced_core\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-a05b804/core\" \"cargo/vendor/iced_core\""
         ]
     },
     {
         "type": "inline",
-        "contents": "[package]\nname = \"iced_core\"\ndescription = \"The essential ideas of iced\"\nversion = \"0.13.0-dev\"\nedition = \"2021\"\nauthors = [ \"H\u00e9ctor Ram\u00f3n Jim\u00e9nez <hector@hecrj.dev>\",]\nlicense = \"MIT\"\nrepository = \"https://github.com/iced-rs/iced\"\nhomepage = \"https://iced.rs\"\ncategories = [ \"gui\",]\nkeywords = [ \"gui\", \"ui\", \"graphics\", \"interface\", \"widgets\",]\n\n[features]\nauto-detect-theme = [ \"dep:dark-light\",]\nadvanced = []\n\n[dependencies]\nbitflags = \"2.0\"\nglam = \"0.25\"\nlog = \"0.4\"\nnum-traits = \"0.2\"\nonce_cell = \"1.0\"\npalette = \"0.7\"\nrustc-hash = \"1.0\"\nsmol_str = \"0.2\"\nthiserror = \"1.0\"\nweb-time = \"0.2\"\n\n[dev-dependencies]\napprox = \"0.5\"\n\n[dependencies.dark-light]\noptional = true\nversion = \"1.0\"\n\n[target.\"cfg(windows)\".dependencies]\nraw-window-handle = \"0.6\"\n",
+        "contents": "[package]\nname = \"iced_core\"\ndescription = \"The essential ideas of iced\"\nversion = \"0.13.0-dev\"\nedition = \"2021\"\nauthors = [ \"H\u00e9ctor Ram\u00f3n Jim\u00e9nez <hector@hecrj.dev>\",]\nlicense = \"MIT\"\nrepository = \"https://github.com/iced-rs/iced\"\nhomepage = \"https://iced.rs\"\ncategories = [ \"gui\",]\nkeywords = [ \"gui\", \"ui\", \"graphics\", \"interface\", \"widgets\",]\n\n[features]\nauto-detect-theme = [ \"dep:dark-light\",]\nadvanced = []\n\n[dependencies]\nbitflags = \"2.0\"\nglam = \"0.25\"\nlog = \"0.4\"\nnum-traits = \"0.2\"\nonce_cell = \"1.0\"\npalette = \"0.7\"\nrustc-hash = \"1.0\"\nsmol_str = \"0.2\"\nthiserror = \"1.0\"\nweb-time = \"0.2\"\n\n[dev-dependencies]\napprox = \"0.5\"\n\n[lints.rust]\nrust_2018_idioms = \"forbid\"\nmissing_debug_implementations = \"deny\"\nmissing_docs = \"deny\"\nunsafe_code = \"deny\"\nunused_results = \"deny\"\n\n[lints.clippy]\ntype-complexity = \"allow\"\nsemicolon_if_nothing_returned = \"deny\"\ntrivially-copy-pass-by-ref = \"deny\"\ndefault_trait_access = \"deny\"\nmatch-wildcard-for-single-variants = \"deny\"\nredundant-closure-for-method-calls = \"deny\"\nfilter_map_next = \"deny\"\nmanual_let_else = \"deny\"\nunused_async = \"deny\"\nfrom_over_into = \"deny\"\nneedless_borrow = \"deny\"\nnew_without_default = \"deny\"\nuseless_conversion = \"deny\"\n\n[lints.rustdoc]\nbroken_intra_doc_links = \"forbid\"\n\n[dependencies.dark-light]\noptional = true\nversion = \"1.0\"\n\n[target.\"cfg(windows)\".dependencies]\nraw-window-handle = \"0.6\"\n",
         "dest": "cargo/vendor/iced_core",
         "dest-filename": "Cargo.toml"
     },
@@ -2518,12 +2570,12 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-31d1d5f/futures\" \"cargo/vendor/iced_futures\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-a05b804/futures\" \"cargo/vendor/iced_futures\""
         ]
     },
     {
         "type": "inline",
-        "contents": "[package]\nname = \"iced_futures\"\ndescription = \"Commands, subscriptions, and future executors for iced\"\nversion = \"0.13.0-dev\"\nedition = \"2021\"\nauthors = [ \"H\u00e9ctor Ram\u00f3n Jim\u00e9nez <hector@hecrj.dev>\",]\nlicense = \"MIT\"\nrepository = \"https://github.com/iced-rs/iced\"\nhomepage = \"https://iced.rs\"\ncategories = [ \"gui\",]\nkeywords = [ \"gui\", \"ui\", \"graphics\", \"interface\", \"widgets\",]\n\n[features]\nthread-pool = [ \"futures/thread-pool\",]\n\n[dependencies]\nfutures = \"0.3\"\nlog = \"0.4\"\nrustc-hash = \"1.0\"\n\n[dependencies.iced_core]\nversion = \"0.13.0-dev\"\npath = \"core\"\n\n[target.\"cfg(target_arch = \\\"wasm32\\\")\".dependencies]\nwasm-bindgen-futures = \"0.4\"\nwasm-timer = \"0.2\"\n\n[package.metadata.docs.rs]\nrustdoc-args = [ \"--cfg\", \"docsrs\",]\nall-features = true\n\n[target.\"cfg(not(target_arch = \\\"wasm32\\\"))\".dependencies.async-std]\noptional = true\nfeatures = [ \"unstable\",]\nversion = \"1.0\"\n\n[target.\"cfg(not(target_arch = \\\"wasm32\\\"))\".dependencies.smol]\noptional = true\nversion = \"1.0\"\n\n[target.\"cfg(not(target_arch = \\\"wasm32\\\"))\".dependencies.tokio]\noptional = true\nfeatures = [ \"rt\", \"rt-multi-thread\", \"time\",]\nversion = \"1.0\"\n",
+        "contents": "[package]\nname = \"iced_futures\"\ndescription = \"Commands, subscriptions, and future executors for iced\"\nversion = \"0.13.0-dev\"\nedition = \"2021\"\nauthors = [ \"H\u00e9ctor Ram\u00f3n Jim\u00e9nez <hector@hecrj.dev>\",]\nlicense = \"MIT\"\nrepository = \"https://github.com/iced-rs/iced\"\nhomepage = \"https://iced.rs\"\ncategories = [ \"gui\",]\nkeywords = [ \"gui\", \"ui\", \"graphics\", \"interface\", \"widgets\",]\n\n[features]\nthread-pool = [ \"futures/thread-pool\",]\n\n[dependencies]\nfutures = \"0.3\"\nlog = \"0.4\"\nrustc-hash = \"1.0\"\n\n[lints.rust]\nrust_2018_idioms = \"forbid\"\nmissing_debug_implementations = \"deny\"\nmissing_docs = \"deny\"\nunsafe_code = \"deny\"\nunused_results = \"deny\"\n\n[lints.clippy]\ntype-complexity = \"allow\"\nsemicolon_if_nothing_returned = \"deny\"\ntrivially-copy-pass-by-ref = \"deny\"\ndefault_trait_access = \"deny\"\nmatch-wildcard-for-single-variants = \"deny\"\nredundant-closure-for-method-calls = \"deny\"\nfilter_map_next = \"deny\"\nmanual_let_else = \"deny\"\nunused_async = \"deny\"\nfrom_over_into = \"deny\"\nneedless_borrow = \"deny\"\nnew_without_default = \"deny\"\nuseless_conversion = \"deny\"\n\n[lints.rustdoc]\nbroken_intra_doc_links = \"forbid\"\n\n[dependencies.iced_core]\nversion = \"0.13.0-dev\"\npath = \"core\"\n\n[target.\"cfg(target_arch = \\\"wasm32\\\")\".dependencies]\nwasm-bindgen-futures = \"0.4\"\nwasm-timer = \"0.2\"\n\n[package.metadata.docs.rs]\nrustdoc-args = [ \"--cfg\", \"docsrs\",]\nall-features = true\n\n[target.\"cfg(not(target_arch = \\\"wasm32\\\"))\".dependencies.async-std]\noptional = true\nfeatures = [ \"unstable\",]\nversion = \"1.0\"\n\n[target.\"cfg(not(target_arch = \\\"wasm32\\\"))\".dependencies.smol]\noptional = true\nversion = \"1.0\"\n\n[target.\"cfg(not(target_arch = \\\"wasm32\\\"))\".dependencies.tokio]\noptional = true\nfeatures = [ \"rt\", \"rt-multi-thread\", \"time\",]\nversion = \"1.0\"\n",
         "dest": "cargo/vendor/iced_futures",
         "dest-filename": "Cargo.toml"
     },
@@ -2536,12 +2588,12 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-31d1d5f/graphics\" \"cargo/vendor/iced_graphics\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-a05b804/graphics\" \"cargo/vendor/iced_graphics\""
         ]
     },
     {
         "type": "inline",
-        "contents": "[package]\nname = \"iced_graphics\"\ndescription = \"A bunch of backend-agnostic types that can be leveraged to build a renderer for iced\"\nversion = \"0.13.0-dev\"\nedition = \"2021\"\nauthors = [ \"H\u00e9ctor Ram\u00f3n Jim\u00e9nez <hector@hecrj.dev>\",]\nlicense = \"MIT\"\nrepository = \"https://github.com/iced-rs/iced\"\nhomepage = \"https://iced.rs\"\ncategories = [ \"gui\",]\nkeywords = [ \"gui\", \"ui\", \"graphics\", \"interface\", \"widgets\",]\n\n[features]\ngeometry = [ \"lyon_path\",]\nimage = [ \"dep:image\", \"kamadak-exif\",]\nweb-colors = []\nfira-sans = []\n\n[dependencies]\nbitflags = \"2.0\"\ncosmic-text = \"0.10\"\nhalf = \"2.2\"\nlog = \"0.4\"\nonce_cell = \"1.0\"\nraw-window-handle = \"0.6\"\nrustc-hash = \"1.0\"\nthiserror = \"1.0\"\nunicode-segmentation = \"1.0\"\n\n[dependencies.iced_core]\nversion = \"0.13.0-dev\"\npath = \"core\"\n\n[dependencies.iced_futures]\nversion = \"0.13.0-dev\"\npath = \"futures\"\n\n[dependencies.bytemuck]\nversion = \"1.0\"\nfeatures = [ \"derive\",]\n\n[dependencies.image]\noptional = true\nversion = \"0.24\"\n\n[dependencies.kamadak-exif]\noptional = true\nversion = \"0.5\"\n\n[dependencies.lyon_path]\noptional = true\nversion = \"1.0\"\n\n[package.metadata.docs.rs]\nrustdoc-args = [ \"--cfg\", \"docsrs\",]\nall-features = true\n",
+        "contents": "[package]\nname = \"iced_graphics\"\ndescription = \"A bunch of backend-agnostic types that can be leveraged to build a renderer for iced\"\nversion = \"0.13.0-dev\"\nedition = \"2021\"\nauthors = [ \"H\u00e9ctor Ram\u00f3n Jim\u00e9nez <hector@hecrj.dev>\",]\nlicense = \"MIT\"\nrepository = \"https://github.com/iced-rs/iced\"\nhomepage = \"https://iced.rs\"\ncategories = [ \"gui\",]\nkeywords = [ \"gui\", \"ui\", \"graphics\", \"interface\", \"widgets\",]\n\n[features]\ngeometry = [ \"lyon_path\",]\nimage = [ \"dep:image\", \"kamadak-exif\",]\nweb-colors = []\nfira-sans = []\n\n[dependencies]\nbitflags = \"2.0\"\ncosmic-text = \"0.10\"\nhalf = \"2.2\"\nlog = \"0.4\"\nonce_cell = \"1.0\"\nraw-window-handle = \"0.6\"\nrustc-hash = \"1.0\"\nthiserror = \"1.0\"\nunicode-segmentation = \"1.0\"\n\n[lints.rust]\nrust_2018_idioms = \"forbid\"\nmissing_debug_implementations = \"deny\"\nmissing_docs = \"deny\"\nunsafe_code = \"deny\"\nunused_results = \"deny\"\n\n[lints.clippy]\ntype-complexity = \"allow\"\nsemicolon_if_nothing_returned = \"deny\"\ntrivially-copy-pass-by-ref = \"deny\"\ndefault_trait_access = \"deny\"\nmatch-wildcard-for-single-variants = \"deny\"\nredundant-closure-for-method-calls = \"deny\"\nfilter_map_next = \"deny\"\nmanual_let_else = \"deny\"\nunused_async = \"deny\"\nfrom_over_into = \"deny\"\nneedless_borrow = \"deny\"\nnew_without_default = \"deny\"\nuseless_conversion = \"deny\"\n\n[lints.rustdoc]\nbroken_intra_doc_links = \"forbid\"\n\n[dependencies.iced_core]\nversion = \"0.13.0-dev\"\npath = \"core\"\n\n[dependencies.iced_futures]\nversion = \"0.13.0-dev\"\npath = \"futures\"\n\n[dependencies.bytemuck]\nversion = \"1.0\"\nfeatures = [ \"derive\",]\n\n[dependencies.image]\noptional = true\nversion = \"0.24\"\n\n[dependencies.kamadak-exif]\noptional = true\nversion = \"0.5\"\n\n[dependencies.lyon_path]\noptional = true\nversion = \"1.0\"\n\n[package.metadata.docs.rs]\nrustdoc-args = [ \"--cfg\", \"docsrs\",]\nall-features = true\n",
         "dest": "cargo/vendor/iced_graphics",
         "dest-filename": "Cargo.toml"
     },
@@ -2554,12 +2606,12 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-31d1d5f/renderer\" \"cargo/vendor/iced_renderer\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-a05b804/renderer\" \"cargo/vendor/iced_renderer\""
         ]
     },
     {
         "type": "inline",
-        "contents": "[package]\nname = \"iced_renderer\"\ndescription = \"The official renderer for iced\"\nversion = \"0.13.0-dev\"\nedition = \"2021\"\nauthors = [ \"H\u00e9ctor Ram\u00f3n Jim\u00e9nez <hector@hecrj.dev>\",]\nlicense = \"MIT\"\nrepository = \"https://github.com/iced-rs/iced\"\nhomepage = \"https://iced.rs\"\ncategories = [ \"gui\",]\nkeywords = [ \"gui\", \"ui\", \"graphics\", \"interface\", \"widgets\",]\n\n[features]\nwgpu = [ \"iced_wgpu\",]\ntiny-skia = [ \"iced_tiny_skia\",]\nimage = [ \"iced_tiny_skia?/image\", \"iced_wgpu?/image\",]\nsvg = [ \"iced_tiny_skia?/svg\", \"iced_wgpu?/svg\",]\ngeometry = [ \"iced_graphics/geometry\", \"iced_tiny_skia?/geometry\", \"iced_wgpu?/geometry\",]\ntracing = [ \"iced_wgpu?/tracing\",]\nweb-colors = [ \"iced_wgpu?/web-colors\",]\nwebgl = [ \"iced_wgpu?/webgl\",]\nfira-sans = [ \"iced_graphics/fira-sans\",]\n\n[dependencies]\nlog = \"0.4\"\nthiserror = \"1.0\"\n\n[dependencies.iced_graphics]\nversion = \"0.13.0-dev\"\npath = \"graphics\"\n\n[dependencies.iced_tiny_skia]\noptional = true\nversion = \"0.13.0-dev\"\npath = \"tiny_skia\"\n\n[dependencies.iced_wgpu]\noptional = true\nversion = \"0.13.0-dev\"\npath = \"wgpu\"\n",
+        "contents": "[package]\nname = \"iced_renderer\"\ndescription = \"The official renderer for iced\"\nversion = \"0.13.0-dev\"\nedition = \"2021\"\nauthors = [ \"H\u00e9ctor Ram\u00f3n Jim\u00e9nez <hector@hecrj.dev>\",]\nlicense = \"MIT\"\nrepository = \"https://github.com/iced-rs/iced\"\nhomepage = \"https://iced.rs\"\ncategories = [ \"gui\",]\nkeywords = [ \"gui\", \"ui\", \"graphics\", \"interface\", \"widgets\",]\n\n[features]\nwgpu = [ \"iced_wgpu\",]\ntiny-skia = [ \"iced_tiny_skia\",]\nimage = [ \"iced_tiny_skia?/image\", \"iced_wgpu?/image\",]\nsvg = [ \"iced_tiny_skia?/svg\", \"iced_wgpu?/svg\",]\ngeometry = [ \"iced_graphics/geometry\", \"iced_tiny_skia?/geometry\", \"iced_wgpu?/geometry\",]\nweb-colors = [ \"iced_wgpu?/web-colors\",]\nwebgl = [ \"iced_wgpu?/webgl\",]\nfira-sans = [ \"iced_graphics/fira-sans\",]\n\n[dependencies]\nlog = \"0.4\"\nthiserror = \"1.0\"\n\n[lints.rust]\nrust_2018_idioms = \"forbid\"\nmissing_debug_implementations = \"deny\"\nmissing_docs = \"deny\"\nunsafe_code = \"deny\"\nunused_results = \"deny\"\n\n[lints.clippy]\ntype-complexity = \"allow\"\nsemicolon_if_nothing_returned = \"deny\"\ntrivially-copy-pass-by-ref = \"deny\"\ndefault_trait_access = \"deny\"\nmatch-wildcard-for-single-variants = \"deny\"\nredundant-closure-for-method-calls = \"deny\"\nfilter_map_next = \"deny\"\nmanual_let_else = \"deny\"\nunused_async = \"deny\"\nfrom_over_into = \"deny\"\nneedless_borrow = \"deny\"\nnew_without_default = \"deny\"\nuseless_conversion = \"deny\"\n\n[lints.rustdoc]\nbroken_intra_doc_links = \"forbid\"\n\n[dependencies.iced_graphics]\nversion = \"0.13.0-dev\"\npath = \"graphics\"\n\n[dependencies.iced_tiny_skia]\noptional = true\nversion = \"0.13.0-dev\"\npath = \"tiny_skia\"\n\n[dependencies.iced_wgpu]\noptional = true\nversion = \"0.13.0-dev\"\npath = \"wgpu\"\n",
         "dest": "cargo/vendor/iced_renderer",
         "dest-filename": "Cargo.toml"
     },
@@ -2572,12 +2624,12 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-31d1d5f/runtime\" \"cargo/vendor/iced_runtime\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-a05b804/runtime\" \"cargo/vendor/iced_runtime\""
         ]
     },
     {
         "type": "inline",
-        "contents": "[package]\nname = \"iced_runtime\"\ndescription = \"A renderer-agnostic runtime for iced\"\nversion = \"0.13.0-dev\"\nedition = \"2021\"\nauthors = [ \"H\u00e9ctor Ram\u00f3n Jim\u00e9nez <hector@hecrj.dev>\",]\nlicense = \"MIT\"\nrepository = \"https://github.com/iced-rs/iced\"\nhomepage = \"https://iced.rs\"\ncategories = [ \"gui\",]\nkeywords = [ \"gui\", \"ui\", \"graphics\", \"interface\", \"widgets\",]\n\n[features]\ndebug = []\nmulti-window = []\n\n[dependencies]\nthiserror = \"1.0\"\nraw-window-handle = \"0.6\"\n\n[dependencies.iced_core]\nversion = \"0.13.0-dev\"\npath = \"core\"\n\n[dependencies.iced_futures]\nfeatures = [ \"thread-pool\",]\nversion = \"0.13.0-dev\"\npath = \"futures\"\n",
+        "contents": "[package]\nname = \"iced_runtime\"\ndescription = \"A renderer-agnostic runtime for iced\"\nversion = \"0.13.0-dev\"\nedition = \"2021\"\nauthors = [ \"H\u00e9ctor Ram\u00f3n Jim\u00e9nez <hector@hecrj.dev>\",]\nlicense = \"MIT\"\nrepository = \"https://github.com/iced-rs/iced\"\nhomepage = \"https://iced.rs\"\ncategories = [ \"gui\",]\nkeywords = [ \"gui\", \"ui\", \"graphics\", \"interface\", \"widgets\",]\n\n[features]\ndebug = []\nmulti-window = []\n\n[dependencies]\nthiserror = \"1.0\"\nraw-window-handle = \"0.6\"\n\n[lints.rust]\nrust_2018_idioms = \"forbid\"\nmissing_debug_implementations = \"deny\"\nmissing_docs = \"deny\"\nunsafe_code = \"deny\"\nunused_results = \"deny\"\n\n[lints.clippy]\ntype-complexity = \"allow\"\nsemicolon_if_nothing_returned = \"deny\"\ntrivially-copy-pass-by-ref = \"deny\"\ndefault_trait_access = \"deny\"\nmatch-wildcard-for-single-variants = \"deny\"\nredundant-closure-for-method-calls = \"deny\"\nfilter_map_next = \"deny\"\nmanual_let_else = \"deny\"\nunused_async = \"deny\"\nfrom_over_into = \"deny\"\nneedless_borrow = \"deny\"\nnew_without_default = \"deny\"\nuseless_conversion = \"deny\"\n\n[lints.rustdoc]\nbroken_intra_doc_links = \"forbid\"\n\n[dependencies.iced_core]\nversion = \"0.13.0-dev\"\npath = \"core\"\n\n[dependencies.iced_futures]\nfeatures = [ \"thread-pool\",]\nversion = \"0.13.0-dev\"\npath = \"futures\"\n",
         "dest": "cargo/vendor/iced_runtime",
         "dest-filename": "Cargo.toml"
     },
@@ -2590,12 +2642,12 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-31d1d5f/tiny_skia\" \"cargo/vendor/iced_tiny_skia\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-a05b804/tiny_skia\" \"cargo/vendor/iced_tiny_skia\""
         ]
     },
     {
         "type": "inline",
-        "contents": "[package]\nname = \"iced_tiny_skia\"\ndescription = \"A software renderer for iced on top of tiny-skia\"\nversion = \"0.13.0-dev\"\nedition = \"2021\"\nauthors = [ \"H\u00e9ctor Ram\u00f3n Jim\u00e9nez <hector@hecrj.dev>\",]\nlicense = \"MIT\"\nrepository = \"https://github.com/iced-rs/iced\"\nhomepage = \"https://iced.rs\"\ncategories = [ \"gui\",]\nkeywords = [ \"gui\", \"ui\", \"graphics\", \"interface\", \"widgets\",]\n\n[features]\nimage = [ \"iced_graphics/image\",]\nsvg = [ \"resvg\",]\ngeometry = [ \"iced_graphics/geometry\",]\n\n[dependencies]\ncosmic-text = \"0.10\"\nkurbo = \"0.10\"\nlog = \"0.4\"\nrustc-hash = \"1.0\"\nsoftbuffer = \"0.4\"\ntiny-skia = \"0.11\"\n\n[dependencies.iced_graphics]\nversion = \"0.13.0-dev\"\npath = \"graphics\"\n\n[dependencies.bytemuck]\nversion = \"1.0\"\nfeatures = [ \"derive\",]\n\n[dependencies.resvg]\noptional = true\nversion = \"0.36\"\n",
+        "contents": "[package]\nname = \"iced_tiny_skia\"\ndescription = \"A software renderer for iced on top of tiny-skia\"\nversion = \"0.13.0-dev\"\nedition = \"2021\"\nauthors = [ \"H\u00e9ctor Ram\u00f3n Jim\u00e9nez <hector@hecrj.dev>\",]\nlicense = \"MIT\"\nrepository = \"https://github.com/iced-rs/iced\"\nhomepage = \"https://iced.rs\"\ncategories = [ \"gui\",]\nkeywords = [ \"gui\", \"ui\", \"graphics\", \"interface\", \"widgets\",]\n\n[features]\nimage = [ \"iced_graphics/image\",]\nsvg = [ \"resvg\",]\ngeometry = [ \"iced_graphics/geometry\",]\n\n[dependencies]\ncosmic-text = \"0.10\"\nkurbo = \"0.10\"\nlog = \"0.4\"\nrustc-hash = \"1.0\"\nsoftbuffer = \"0.4\"\ntiny-skia = \"0.11\"\n\n[lints.rust]\nrust_2018_idioms = \"forbid\"\nmissing_debug_implementations = \"deny\"\nmissing_docs = \"deny\"\nunsafe_code = \"deny\"\nunused_results = \"deny\"\n\n[lints.clippy]\ntype-complexity = \"allow\"\nsemicolon_if_nothing_returned = \"deny\"\ntrivially-copy-pass-by-ref = \"deny\"\ndefault_trait_access = \"deny\"\nmatch-wildcard-for-single-variants = \"deny\"\nredundant-closure-for-method-calls = \"deny\"\nfilter_map_next = \"deny\"\nmanual_let_else = \"deny\"\nunused_async = \"deny\"\nfrom_over_into = \"deny\"\nneedless_borrow = \"deny\"\nnew_without_default = \"deny\"\nuseless_conversion = \"deny\"\n\n[lints.rustdoc]\nbroken_intra_doc_links = \"forbid\"\n\n[dependencies.iced_graphics]\nversion = \"0.13.0-dev\"\npath = \"graphics\"\n\n[dependencies.bytemuck]\nversion = \"1.0\"\nfeatures = [ \"derive\",]\n\n[dependencies.resvg]\noptional = true\nversion = \"0.36\"\n",
         "dest": "cargo/vendor/iced_tiny_skia",
         "dest-filename": "Cargo.toml"
     },
@@ -2608,12 +2660,12 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-31d1d5f/wgpu\" \"cargo/vendor/iced_wgpu\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-a05b804/wgpu\" \"cargo/vendor/iced_wgpu\""
         ]
     },
     {
         "type": "inline",
-        "contents": "[package]\nname = \"iced_wgpu\"\ndescription = \"A renderer for iced on top of wgpu\"\nversion = \"0.13.0-dev\"\nedition = \"2021\"\nauthors = [ \"H\u00e9ctor Ram\u00f3n Jim\u00e9nez <hector@hecrj.dev>\",]\nlicense = \"MIT\"\nrepository = \"https://github.com/iced-rs/iced\"\nhomepage = \"https://iced.rs\"\ncategories = [ \"gui\",]\nkeywords = [ \"gui\", \"ui\", \"graphics\", \"interface\", \"widgets\",]\n\n[features]\ngeometry = [ \"iced_graphics/geometry\", \"lyon\",]\nimage = [ \"iced_graphics/image\",]\nsvg = [ \"resvg/text\",]\nweb-colors = [ \"iced_graphics/web-colors\",]\nwebgl = [ \"wgpu/webgl\",]\n\n[dependencies]\nbitflags = \"2.0\"\nfutures = \"0.3\"\nglam = \"0.25\"\nguillotiere = \"0.6\"\nlog = \"0.4\"\nonce_cell = \"1.0\"\nrustc-hash = \"1.0\"\nthiserror = \"1.0\"\nwgpu = \"0.19\"\n\n[dependencies.iced_graphics]\nversion = \"0.13.0-dev\"\npath = \"graphics\"\n\n[dependencies.bytemuck]\nversion = \"1.0\"\nfeatures = [ \"derive\",]\n\n[dependencies.glyphon]\ngit = \"https://github.com/hecrj/glyphon.git\"\nrev = \"ceed55403ce53e120ce9d1fae17dcfe388726118\"\n\n[dependencies.lyon]\noptional = true\nversion = \"1.0\"\n\n[dependencies.resvg]\noptional = true\nversion = \"0.36\"\n\n[dependencies.tracing]\noptional = true\nversion = \"0.1\"\n\n[package.metadata.docs.rs]\nrustdoc-args = [ \"--cfg\", \"docsrs\",]\nall-features = true\n",
+        "contents": "[package]\nname = \"iced_wgpu\"\ndescription = \"A renderer for iced on top of wgpu\"\nversion = \"0.13.0-dev\"\nedition = \"2021\"\nauthors = [ \"H\u00e9ctor Ram\u00f3n Jim\u00e9nez <hector@hecrj.dev>\",]\nlicense = \"MIT\"\nrepository = \"https://github.com/iced-rs/iced\"\nhomepage = \"https://iced.rs\"\ncategories = [ \"gui\",]\nkeywords = [ \"gui\", \"ui\", \"graphics\", \"interface\", \"widgets\",]\n\n[features]\ngeometry = [ \"iced_graphics/geometry\", \"lyon\",]\nimage = [ \"iced_graphics/image\",]\nsvg = [ \"resvg/text\",]\nweb-colors = [ \"iced_graphics/web-colors\",]\nwebgl = [ \"wgpu/webgl\",]\n\n[dependencies]\nbitflags = \"2.0\"\nfutures = \"0.3\"\nglam = \"0.25\"\nguillotiere = \"0.6\"\nlog = \"0.4\"\nonce_cell = \"1.0\"\nrustc-hash = \"1.0\"\nthiserror = \"1.0\"\nwgpu = \"0.19\"\n\n[lints.rust]\nrust_2018_idioms = \"forbid\"\nmissing_debug_implementations = \"deny\"\nmissing_docs = \"deny\"\nunsafe_code = \"deny\"\nunused_results = \"deny\"\n\n[lints.clippy]\ntype-complexity = \"allow\"\nsemicolon_if_nothing_returned = \"deny\"\ntrivially-copy-pass-by-ref = \"deny\"\ndefault_trait_access = \"deny\"\nmatch-wildcard-for-single-variants = \"deny\"\nredundant-closure-for-method-calls = \"deny\"\nfilter_map_next = \"deny\"\nmanual_let_else = \"deny\"\nunused_async = \"deny\"\nfrom_over_into = \"deny\"\nneedless_borrow = \"deny\"\nnew_without_default = \"deny\"\nuseless_conversion = \"deny\"\n\n[lints.rustdoc]\nbroken_intra_doc_links = \"forbid\"\n\n[dependencies.iced_graphics]\nversion = \"0.13.0-dev\"\npath = \"graphics\"\n\n[dependencies.bytemuck]\nversion = \"1.0\"\nfeatures = [ \"derive\",]\n\n[dependencies.glyphon]\ngit = \"https://github.com/hecrj/glyphon.git\"\nrev = \"ceed55403ce53e120ce9d1fae17dcfe388726118\"\n\n[dependencies.lyon]\noptional = true\nversion = \"1.0\"\n\n[dependencies.resvg]\noptional = true\nversion = \"0.36\"\n\n[package.metadata.docs.rs]\nrustdoc-args = [ \"--cfg\", \"docsrs\",]\nall-features = true\n",
         "dest": "cargo/vendor/iced_wgpu",
         "dest-filename": "Cargo.toml"
     },
@@ -2626,12 +2678,12 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-31d1d5f/widget\" \"cargo/vendor/iced_widget\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-a05b804/widget\" \"cargo/vendor/iced_widget\""
         ]
     },
     {
         "type": "inline",
-        "contents": "[package]\nname = \"iced_widget\"\ndescription = \"The built-in widgets for iced\"\nversion = \"0.13.0-dev\"\nedition = \"2021\"\nauthors = [ \"H\u00e9ctor Ram\u00f3n Jim\u00e9nez <hector@hecrj.dev>\",]\nlicense = \"MIT\"\nrepository = \"https://github.com/iced-rs/iced\"\nhomepage = \"https://iced.rs\"\ncategories = [ \"gui\",]\nkeywords = [ \"gui\", \"ui\", \"graphics\", \"interface\", \"widgets\",]\n\n[features]\nlazy = [ \"ouroboros\",]\nimage = [ \"iced_renderer/image\",]\nsvg = [ \"iced_renderer/svg\",]\ncanvas = [ \"iced_renderer/geometry\",]\nqr_code = [ \"canvas\", \"qrcode\",]\nwgpu = [ \"iced_renderer/wgpu\",]\nadvanced = []\n\n[dependencies]\nnum-traits = \"0.2\"\nrustc-hash = \"1.0\"\nthiserror = \"1.0\"\nunicode-segmentation = \"1.0\"\n\n[dependencies.iced_renderer]\nversion = \"0.13.0-dev\"\npath = \"renderer\"\n\n[dependencies.iced_runtime]\nversion = \"0.13.0-dev\"\npath = \"runtime\"\n\n[dependencies.ouroboros]\noptional = true\nversion = \"0.18\"\n\n[dependencies.qrcode]\noptional = true\nversion = \"0.13\"\ndefault-features = false\n\n[package.metadata.docs.rs]\nrustdoc-args = [ \"--cfg\", \"docsrs\",]\nall-features = true\n",
+        "contents": "[package]\nname = \"iced_widget\"\ndescription = \"The built-in widgets for iced\"\nversion = \"0.13.0-dev\"\nedition = \"2021\"\nauthors = [ \"H\u00e9ctor Ram\u00f3n Jim\u00e9nez <hector@hecrj.dev>\",]\nlicense = \"MIT\"\nrepository = \"https://github.com/iced-rs/iced\"\nhomepage = \"https://iced.rs\"\ncategories = [ \"gui\",]\nkeywords = [ \"gui\", \"ui\", \"graphics\", \"interface\", \"widgets\",]\n\n[features]\nlazy = [ \"ouroboros\",]\nimage = [ \"iced_renderer/image\",]\nsvg = [ \"iced_renderer/svg\",]\ncanvas = [ \"iced_renderer/geometry\",]\nqr_code = [ \"canvas\", \"qrcode\",]\nwgpu = [ \"iced_renderer/wgpu\",]\nadvanced = []\n\n[dependencies]\nnum-traits = \"0.2\"\nrustc-hash = \"1.0\"\nthiserror = \"1.0\"\nunicode-segmentation = \"1.0\"\n\n[lints.rust]\nrust_2018_idioms = \"forbid\"\nmissing_debug_implementations = \"deny\"\nmissing_docs = \"deny\"\nunsafe_code = \"deny\"\nunused_results = \"deny\"\n\n[lints.clippy]\ntype-complexity = \"allow\"\nsemicolon_if_nothing_returned = \"deny\"\ntrivially-copy-pass-by-ref = \"deny\"\ndefault_trait_access = \"deny\"\nmatch-wildcard-for-single-variants = \"deny\"\nredundant-closure-for-method-calls = \"deny\"\nfilter_map_next = \"deny\"\nmanual_let_else = \"deny\"\nunused_async = \"deny\"\nfrom_over_into = \"deny\"\nneedless_borrow = \"deny\"\nnew_without_default = \"deny\"\nuseless_conversion = \"deny\"\n\n[lints.rustdoc]\nbroken_intra_doc_links = \"forbid\"\n\n[dependencies.iced_renderer]\nversion = \"0.13.0-dev\"\npath = \"renderer\"\n\n[dependencies.iced_runtime]\nversion = \"0.13.0-dev\"\npath = \"runtime\"\n\n[dependencies.ouroboros]\noptional = true\nversion = \"0.18\"\n\n[dependencies.qrcode]\noptional = true\nversion = \"0.13\"\ndefault-features = false\n\n[package.metadata.docs.rs]\nrustdoc-args = [ \"--cfg\", \"docsrs\",]\nall-features = true\n",
         "dest": "cargo/vendor/iced_widget",
         "dest-filename": "Cargo.toml"
     },
@@ -2644,12 +2696,12 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced-31d1d5f/winit\" \"cargo/vendor/iced_winit\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/iced-a05b804/winit\" \"cargo/vendor/iced_winit\""
         ]
     },
     {
         "type": "inline",
-        "contents": "[package]\nname = \"iced_winit\"\ndescription = \"A runtime for iced on top of winit\"\nversion = \"0.13.0-dev\"\nedition = \"2021\"\nauthors = [ \"H\u00e9ctor Ram\u00f3n Jim\u00e9nez <hector@hecrj.dev>\",]\nlicense = \"MIT\"\nrepository = \"https://github.com/iced-rs/iced\"\nhomepage = \"https://iced.rs\"\ncategories = [ \"gui\",]\nkeywords = [ \"gui\", \"ui\", \"graphics\", \"interface\", \"widgets\",]\n\n[features]\ndefault = [ \"x11\", \"wayland\", \"wayland-dlopen\", \"wayland-csd-adwaita\",]\ndebug = [ \"iced_runtime/debug\",]\nsystem = [ \"sysinfo\",]\napplication = []\nx11 = [ \"winit/x11\",]\nwayland = [ \"winit/wayland\",]\nwayland-dlopen = [ \"winit/wayland-dlopen\",]\nwayland-csd-adwaita = [ \"winit/wayland-csd-adwaita\",]\nmulti-window = [ \"iced_runtime/multi-window\",]\n\n[dependencies]\nlog = \"0.4\"\nrustc-hash = \"1.0\"\nthiserror = \"1.0\"\ntracing = \"0.1\"\nwindow_clipboard = \"0.4.1\"\n\n[dependencies.iced_graphics]\nversion = \"0.13.0-dev\"\npath = \"graphics\"\n\n[dependencies.iced_runtime]\nversion = \"0.13.0-dev\"\npath = \"runtime\"\n\n[dependencies.winit]\ngit = \"https://github.com/iced-rs/winit.git\"\nrev = \"592bd152f6d5786fae7d918532d7db752c0d164f\"\n\n[dependencies.sysinfo]\noptional = true\nversion = \"0.30\"\n\n[target.\"cfg(target_os = \\\"windows\\\")\".dependencies]\nwinapi = \"0.3\"\n\n[target.\"cfg(target_arch = \\\"wasm32\\\")\".dependencies.web-sys]\nfeatures = [ \"Document\", \"Window\",]\nversion = \"=0.3.67\"\n",
+        "contents": "[package]\nname = \"iced_winit\"\ndescription = \"A runtime for iced on top of winit\"\nversion = \"0.13.0-dev\"\nedition = \"2021\"\nauthors = [ \"H\u00e9ctor Ram\u00f3n Jim\u00e9nez <hector@hecrj.dev>\",]\nlicense = \"MIT\"\nrepository = \"https://github.com/iced-rs/iced\"\nhomepage = \"https://iced.rs\"\ncategories = [ \"gui\",]\nkeywords = [ \"gui\", \"ui\", \"graphics\", \"interface\", \"widgets\",]\n\n[features]\ndefault = [ \"x11\", \"wayland\", \"wayland-dlopen\", \"wayland-csd-adwaita\",]\ndebug = [ \"iced_runtime/debug\",]\nsystem = [ \"sysinfo\",]\napplication = []\nx11 = [ \"winit/x11\",]\nwayland = [ \"winit/wayland\",]\nwayland-dlopen = [ \"winit/wayland-dlopen\",]\nwayland-csd-adwaita = [ \"winit/wayland-csd-adwaita\",]\nmulti-window = [ \"iced_runtime/multi-window\",]\n\n[dependencies]\nlog = \"0.4\"\nrustc-hash = \"1.0\"\nthiserror = \"1.0\"\ntracing = \"0.1\"\nwindow_clipboard = \"0.4.1\"\n\n[lints.rust]\nrust_2018_idioms = \"forbid\"\nmissing_debug_implementations = \"deny\"\nmissing_docs = \"deny\"\nunsafe_code = \"deny\"\nunused_results = \"deny\"\n\n[lints.clippy]\ntype-complexity = \"allow\"\nsemicolon_if_nothing_returned = \"deny\"\ntrivially-copy-pass-by-ref = \"deny\"\ndefault_trait_access = \"deny\"\nmatch-wildcard-for-single-variants = \"deny\"\nredundant-closure-for-method-calls = \"deny\"\nfilter_map_next = \"deny\"\nmanual_let_else = \"deny\"\nunused_async = \"deny\"\nfrom_over_into = \"deny\"\nneedless_borrow = \"deny\"\nnew_without_default = \"deny\"\nuseless_conversion = \"deny\"\n\n[lints.rustdoc]\nbroken_intra_doc_links = \"forbid\"\n\n[dependencies.iced_graphics]\nversion = \"0.13.0-dev\"\npath = \"graphics\"\n\n[dependencies.iced_runtime]\nversion = \"0.13.0-dev\"\npath = \"runtime\"\n\n[dependencies.winit]\ngit = \"https://github.com/iced-rs/winit.git\"\nrev = \"592bd152f6d5786fae7d918532d7db752c0d164f\"\n\n[dependencies.sysinfo]\noptional = true\nversion = \"0.30\"\n\n[target.\"cfg(target_os = \\\"windows\\\")\".dependencies]\nwinapi = \"0.3\"\n\n[target.\"cfg(target_arch = \\\"wasm32\\\")\".dependencies.web-sys]\nfeatures = [ \"Document\", \"Window\",]\nversion = \"=0.3.67\"\n",
         "dest": "cargo/vendor/iced_winit",
         "dest-filename": "Cargo.toml"
     },
@@ -6892,6 +6944,19 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/xdg/xdg-2.5.2.crate",
+        "sha256": "213b7324336b53d2414b2db8537e56544d981803139155afa84f76eeebb7a546",
+        "dest": "cargo/vendor/xdg-2.5.2"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"213b7324336b53d2414b2db8537e56544d981803139155afa84f76eeebb7a546\", \"files\": {}}",
+        "dest": "cargo/vendor/xdg-2.5.2",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/xdg-home/xdg-home-1.1.0.crate",
         "sha256": "21e5a325c3cb8398ad6cf859c1135b25dd29e186679cf2da7581d9679f63b38e",
         "dest": "cargo/vendor/xdg-home-1.1.0"
@@ -7177,7 +7242,7 @@
     },
     {
         "type": "inline",
-        "contents": "[source.vendored-sources]\ndirectory = \"cargo/vendor\"\n\n[source.crates-io]\nreplace-with = \"vendored-sources\"\n\n[source.\"https://github.com/hecrj/glyphon\"]\ngit = \"https://github.com/hecrj/glyphon\"\nreplace-with = \"vendored-sources\"\nrev = \"ceed55403ce53e120ce9d1fae17dcfe388726118\"\n\n[source.\"https://github.com/iced-rs/iced\"]\ngit = \"https://github.com/iced-rs/iced\"\nreplace-with = \"vendored-sources\"\nrev = \"31d1d5fecbef50fa319cabd5d4194f1e4aaefa21\"\n\n[source.\"https://github.com/iced-rs/winit\"]\ngit = \"https://github.com/iced-rs/winit\"\nreplace-with = \"vendored-sources\"\nrev = \"592bd152f6d5786fae7d918532d7db752c0d164f\"\n",
+        "contents": "[source.vendored-sources]\ndirectory = \"cargo/vendor\"\n\n[source.crates-io]\nreplace-with = \"vendored-sources\"\n\n[source.\"https://github.com/hecrj/glyphon\"]\ngit = \"https://github.com/hecrj/glyphon\"\nreplace-with = \"vendored-sources\"\nrev = \"ceed55403ce53e120ce9d1fae17dcfe388726118\"\n\n[source.\"https://github.com/iced-rs/iced\"]\ngit = \"https://github.com/iced-rs/iced\"\nreplace-with = \"vendored-sources\"\nrev = \"a05b8044a9a82c1802d4d97f1723e24b9d9dad9c\"\n\n[source.\"https://github.com/iced-rs/winit\"]\ngit = \"https://github.com/iced-rs/winit\"\nreplace-with = \"vendored-sources\"\nrev = \"592bd152f6d5786fae7d918532d7db752c0d164f\"\n",
         "dest": "cargo",
         "dest-filename": "config"
     }
