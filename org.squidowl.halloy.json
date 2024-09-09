@@ -38,8 +38,8 @@
                 {
                     "type": "archive",
                     "archive-type": "tar-gzip",
-                    "url": "https://github.com/squidowl/halloy/archive/refs/tags/2024.10.tar.gz",
-                    "sha256": "8cada788d7469889876085b0bfb775aee3b9128c7af500d68a1667818851aef4"
+                    "url": "https://github.com/squidowl/halloy/archive/refs/tags/2024.11.tar.gz",
+                    "sha256": "d1da65298b53d1938735df5f41e5c7cd2b591093d61329e308e5a2a94059dad7"
                 },
                 "generated-sources.json"
             ]
