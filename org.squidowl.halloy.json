@@ -10,6 +10,8 @@
     "finish-args": [
         "--share=ipc",
         "--socket=fallback-x11",
+        "--socket=pulseaudio",
+        "--talk-name=org.freedesktop.Notifications",
         "--socket=wayland",
         "--device=dri",
         "--share=network"
