@@ -8,13 +8,13 @@
     ],
     "command": "halloy",
     "finish-args": [
+        "--device=dri",
         "--share=ipc",
+        "--share=network",
         "--socket=fallback-x11",
         "--socket=pulseaudio",
-        "--talk-name=org.freedesktop.Notifications",
         "--socket=wayland",
-        "--device=dri",
-        "--share=network"
+        "--talk-name=org.freedesktop.Notifications"
     ],
     "build-options": {
         "append-path" : "/usr/lib/sdk/rust-stable/bin"
@@ -40,8 +40,8 @@
                 {
                     "type": "archive",
                     "archive-type": "tar-gzip",
-                    "url": "https://github.com/squidowl/halloy/archive/refs/tags/2025.1.tar.gz",
-                    "sha256": "0a483c324710596c8d030c3ed10606ebb9cec3059a59a9e2262318c2ea1d3d6f"
+                    "url": "https://github.com/squidowl/halloy/archive/refs/tags/2025.2.tar.gz",
+                    "sha256": "d05f495048a97cf321c1a24757e36909e08e5ff944a8a9ecc6345aafaba10510"
                 },
                 "generated-sources.json"
             ]
