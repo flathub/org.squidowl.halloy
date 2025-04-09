@@ -35,13 +35,13 @@
                 "install -Dm644 ./assets/linux/org.squidowl.halloy.appdata.xml /app/share/metainfo/org.squidowl.halloy.appdata.xml",
                 "install -Dm644 ./assets/linux/org.squidowl.halloy.desktop /app/share/applications/org.squidowl.halloy.desktop",
                 "install -Dm755 ./target/release/halloy -t /app/bin/"
-              ],
+            ],
             "sources": [
                 {
                     "type": "archive",
                     "archive-type": "tar-gzip",
-                    "url": "https://github.com/squidowl/halloy/archive/refs/tags/2025.4.tar.gz",
-                    "sha256": "f19f01f0e31739bfbafaaf63e7d01e9d1de2813127715f6243a1bcb4e041a8c1"
+                    "url": "https://github.com/squidowl/halloy/archive/refs/tags/2025.5.tar.gz",
+                    "sha256": "ee348b830db85fcea09616a45271551fa7a382513184170a84ef9dc8b720a88d"
                 },
                 "generated-sources.json"
             ]
