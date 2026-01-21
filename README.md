@@ -1,27 +1,27 @@
-# Flathub
+# Halloy
 
-Flathub is the central place for building and hosting Flatpak builds.
+___IRC client written in Rust___
 
-Using the Flathub repository
-----------------------------
+Halloy is an open-source IRC client written in Rust, with the Iced GUI library. It aims to provide a simple and fast client for Mac, Windows, and Linux platforms. 
 
-To install applications that are hosted on Flathub, use the following:
-```
-flatpak remote-add flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install flathub org.gnome.Recipes
-```
+---
 
-To install applications from the beta branch, use the following:
-```
-flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
-flatpak install flathub-beta org.godotengine.Godot
+## Manual Install and Run
+
+Make sure you follow the [setup guide for your Linux distribution](https://flathub.org/en/setup) before installing.
+
+```bash
+flatpak install flathub org.squidowl.halloy
+flatpak run org.squidowl.halloy
 ```
 
-For more information and more applications see https://flathub.org
+## Building
 
-Contributing to Flathub
------------------------
+```bash
+git clone git@github.com:flathub/org.squidowl.halloy.git
+flatpak run org.flatpak.Builder build-dir --user --ccache --force-clean --install org.squidowl.halloy.json
+```
 
-For information on creating packages or reporting issues please see the [contributing page](/CONTRIBUTING.md).
+---
 
-***Note:*** *this repository is not for reporting issues related to the flathub.org website itself or contributing to its development. For that, go to https://github.com/flathub/website*
+**Technologies**: Freedesktop, Iced, Rust
