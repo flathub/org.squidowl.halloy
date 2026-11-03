@@ -14,7 +14,8 @@
         "--socket=pulseaudio",
         "--socket=wayland",
         "--socket=x11",
-        "--talk-name=org.freedesktop.Notifications"
+        "--talk-name=org.freedesktop.Notifications",
+        "--system-talk-name=org.freedesktop.login1"
     ],
     "build-options": {
         "append-path" : "/usr/lib/sdk/rust-stable/bin"
@@ -40,8 +41,8 @@
                 {
                     "type": "archive",
                     "archive-type": "tar-gzip",
-                    "url": "https://github.com/squidowl/halloy/archive/refs/tags/2026.9.tar.gz",
-                    "sha256": "5d35f1f6cb2902225b5267b62423d3f41d088147a66c0044148c16a6ca7cd4cd"
+                    "url": "https://github.com/squidowl/halloy/archive/refs/tags/2026.10.tar.gz",
+                    "sha256": "19b77a7e09cf66ef518bfa5b1e8b3c07713373d7468d30500b093e327729a00b"
                 },
                 "generated-sources.json"
             ]
